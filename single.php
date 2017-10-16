@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package CAP_Theme
+ * @package inward-revenue
  */
 
 get_header(); ?>

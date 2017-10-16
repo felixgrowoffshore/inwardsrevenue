@@ -7,7 +7,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package CAP_Theme
+ * @package inward-revenue
  */
 
 /*

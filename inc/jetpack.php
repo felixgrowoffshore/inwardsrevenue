@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package CAP_Theme
+ * @package inward-revenue
  */
 
 /**

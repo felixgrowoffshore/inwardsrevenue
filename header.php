@@ -25,7 +25,6 @@
 	<div class="header_wrap"><div class="container">
 		<header id="masthead" class="site-header">
 				<div class="row">
-					<h1 class="title"><a href="/RC"><img class="logo" src="http://localhost:84/RC/wp-content/uploads/2017/10/logo.png"></a></h1>
 					<div class="col-md-4 col-sm-7 col-xs-8 logo">
 						<div class="site-branding">
 							<?php
