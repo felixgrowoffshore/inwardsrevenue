@@ -1,0 +1,28 @@
+.header_wrap{
+	background-color: #ca2327;
+
+
+	header{
+		height: 400px;
+		.title{
+			color: #fff;
+
+			.logo{
+				width: 11%;
+				padding-bottom: 5px;
+			}
+		}
+
+		.nav-bar{
+			    bottom: 90px;
+
+			    #primary-menu{
+			    	background-color: #fff;
+			    	font-weight: bold;
+			    }
+
+		}
+	}
+
+}
+
