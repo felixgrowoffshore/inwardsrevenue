@@ -11,11 +11,12 @@ $bootstrap-sass-asset-helper: false !default;
 $gray-base:              #000 !default;
 $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
 $gray-dark:              lighten($gray-base, 20%) !default;   // #333
-$gray:                   #575757 !default; // #555
+$gray:                   #3f3f3f !default; // #555
 $gray-light:             #e9e9e9 !default; // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
-$brand-primary:         #000; // #337ab7
+
+$brand-primary:         #ce323b; // #337ab7
 $brand-success:         #5cb85c !default;
 $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
@@ -36,31 +37,29 @@ $link-color:            $brand-primary !default;
 //** Link hover color set via `darken()` function.
 $link-hover-color:      darken($link-color, 15%) !default;
 //** Link hover decoration.
-$link-hover-decoration: underline !default;
+$link-hover-decoration: none !default;
 
 
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-arvo:        "arvo","Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family-roboto:      "roboto","Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
-$font-family-base:        $font-family-roboto !default;
+$font-family-base:        $font-family-sans-serif !default;
 
-$font-size-base:          17px !default;
+$font-size-base:          18pt !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
-$font-size-h1:            36px !default; // ~36px
-$font-size-h2:            24px !default; // ~30px
-$font-size-h3:            18px !default; // ~24px
-$font-size-h4:            17px !default; // ~18px
-$font-size-h5:            16px !default;
-$font-size-h6:            14px !default; // ~12px
+$font-size-h1:            50pt !default; // ~36px
+$font-size-h2:            40pt !default; // ~30px
+$font-size-h3:            30pt !default; // ~24px
+$font-size-h4:            24pt !default; // ~18px
+$font-size-h5:            22pt !default;
+$font-size-h6:            20pt !default; // ~12px
 
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base:        1.428571429 !default; // 20/14
@@ -68,10 +67,10 @@ $line-height-base:        1.428571429 !default; // 20/14
 $line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
 
 //** By default, this inherits from the `<body>`.
-$headings-font-family:    $font-family-arvo !default;
+$headings-font-family:    $font-family-sans-serif !default;
 $headings-font-weight:    500 !default;
 $headings-line-height:    1.1 !default;
-$headings-color:          $brand-primary !default;
+$headings-color:          $gray !default;
 
 
 //== Iconography
