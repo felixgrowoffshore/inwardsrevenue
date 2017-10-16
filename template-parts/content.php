@@ -8,55 +8,23 @@
  */
 
 ?>
-<div class="row">
-	<div class="col-md-8 col-lg-9">
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-			<header class="entry-header ">
-				<?php
-				if ( is_singular() ) :
-					the_title( '<h1 class="entry-title">', '</h1>' );
-				else :
-					the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-				endif;
-
-				if ( 'post' === get_post_type() ) : ?>
-				<div class="entry-meta">
-					<?php cap_theme_posted_on(); ?>
-				</div><!-- .entry-meta -->
-				<?php
-				endif; ?>
-			</header><!-- .entry-header -->
-
-
-			<div class="entry-content">
-				<?php
-					the_content( sprintf(
-						wp_kses(
-							/* translators: %s: Name of current post. Only visible to screen readers */
-							__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'cap-theme' ),
-							array(
-								'span' => array(
-									'class' => array(),
-								),
-							)
-						),
-						get_the_title()
-					) );
-
-					wp_link_pages( array(
-						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'cap-theme' ),
-						'after'  => '</div>',
-					) );
-				?>
-			</div><!-- .entry-content -->
-
-			<footer class="entry-footer">
-				<?php cap_theme_entry_footer(); ?>
-			</footer><!-- .entry-footer -->
-		</article><!-- #post-<?php the_ID(); ?> -->
-	</div>
-	<div class="col-md-4 col-lg-3">
-		<?php the_post_navigation(); ?>
-	</div>
-</div>
+<div class="container home-con">
+				<div class="row">
+					<div class="col-md-12 first-con">
+						<h2>We take sales talent recruitment seriously</h2>
+					</div>
+					<div class="col-md-12 first-con">
+						<p>Our approach is to find the right people for the right companies every time. We do it by digging deeper and building relationships that truly drive both our partner's and candidate's futures forward.</p>
+					</div>
+				</div>
+			</div>
+			<div class="container home-con">
+				<div class="row">
+					<div class="col-md-6">
+						<h2>We take sales talent recruitment seriously</h2>
+					</div>
+					<div class="col-md-6">
+						<p>Our approach is to find the right people for the right companies every time. We do it by digging deeper and building relationships that truly drive both our partner's and candidate's futures forward.</p>
+					</div>
+				</div>
+			</div>
