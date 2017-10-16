@@ -232,11 +232,12 @@
 
 .navbar-nav {
   margin: ($navbar-padding-vertical / 2) (-$navbar-padding-horizontal);
-
+  background: #fff;
   > li > a {
     padding-top:    10px;
     padding-bottom: 10px;
     line-height: $line-height-computed;
+    color : $gray;
   }
 
   @media (max-width: $grid-float-breakpoint-max) {
