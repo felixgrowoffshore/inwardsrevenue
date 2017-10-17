@@ -37,13 +37,26 @@
 							<h2>Currently recruiting for</h2>
 							<p>Here a just few of the job roles we are currently recruiting for.</p>
 						</div>
-						<div class="">
-							<input type="haha" name="hah">
+						<div id="field" class="container">
+							<div class="row">
+								<div class="col-md-12 input-field">
+									<div id="fourth-content">	
+										<input class="col-md-5" type="input" name="input" placeholder="KEYWORDS">
+										<input class="col-md-5" type="input" name="input" placeholder="LOCATION">
+										<a href="" class="btn col-md-2">SEARCH</a>	
+									<div class="filter">
+										<p class="col-md-2">Filter by tag</p>
+										<a href="" class="btn col-md-1 tag">tag title</a>
+										<a href="" class="btn col-md-1 tag">tag title</a>
+										<a href="" class="btn col-md-1 tag">tag title</a>
+										<a href="" class="btn col-md-1 tag">tag title</a>
+									</div>
+									</div>	
+								</div>	
+							</div>
 						</div>	
 					</div>
 				</div>
-<<<<<<< HEAD
-				
-=======
+
 			</div>
->>>>>>> 87def3ba374e4222edf92acff0adccd8a6a065ff
+

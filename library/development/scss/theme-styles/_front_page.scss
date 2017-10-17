@@ -69,4 +69,39 @@
 	p{
 		font-size: 38px;
 	}
+
+
+}
+
+#field{	
+	.input-field{	
+		margin-top: 20px;
+		left: 0px;
+		background-color: #ca2327;
+
+		#fourth-content{
+			margin-top: 40px;
+			margin-bottom: 40px;
+		input{
+		    padding-bottom: 4px;
+    		padding-top: 4px;
+   			margin-top: 2px;
+   			margin-right: 40px;
+   			width: 400px;
+
+   		
+
+		}
+
+
+		.btn{
+			background-color: #ca2327;
+
+		}
+
+		.tag{
+			text-transform: lowercase;
+		}
+	  }
+	}
 }
