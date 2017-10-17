@@ -65,6 +65,6 @@ function get_resources_links($slug){
 
 // constant links
 DEFINE('THEMEPATH', get_template_directory().'/');
-DEFINE('IMAGEPATH', get_template_directory().'/images/');
+DEFINE('IMAGEPATH', get_template_directory_uri().'/images/');
 DEFINE('JAVASCRIPTPATH', get_template_directory().'/js/');
 DEFINE('TEMPLATEPATH', get_template_directory().'/template-parts/');

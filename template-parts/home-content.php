@@ -10,14 +10,14 @@
 ?>
 <div class="container home-con">
 	<div class="row">
-		<div class="col-md-12 first-con">
+		<div class="col-md-8 first-con">
 			<h2>We take sales talent recruitment seriously</h2>
 			<p>Our approach is to find the right people for the right companies every time. We do it by digging deeper and building relationships that truly drive both our partner's and candidate's futures forward.</p>
 		</div>
 
 	</div>
 </div>
-<div class="container col-md-12 second-content">
+<div class="col-md-12 second-content">
 	<div class="row">
 		<div class="col-md-6 col-sm-6 col-xs-12 first-col">
 			<h2>CLIENTS</h2>
@@ -44,13 +44,13 @@
 						<input class="col-md-5" type="input" name="input" placeholder="KEYWORDS">
 						<input class="col-md-5" type="input" name="input" placeholder="LOCATION">
 						<a href="" class="btn col-md-2">SEARCH</a>
-					<div id="filter">
-						<p class="col-md-2">Filter by tag</p>
-						<a href="" class="btn col-md-1 tag">tag title</a>
-						<a href="" class="btn col-md-1 tag">tag title</a>
-						<a href="" class="btn col-md-1 tag">tag title</a>
-						<a href="" class="btn col-md-1 tag">tag title</a>
-					</div>
+  					<div id="filter">
+  						<p class="">Filter by tag :
+  						<a href="" class="btn">tag title</a>
+  						<a href="" class="btn">tag title</a>
+  						<a href="" class="btn">tag title</a>
+  						<a href="" class="btn">tag title</a></p>
+  					</div>
 					</div>
 				</div>
 			</div>
@@ -58,27 +58,46 @@
 	</div>
 </div>
 <div class="container fifth-content">
-	<div class="row fifth-row">
+  <div class="row fifth-row">
+	<div class="col-md-12">
 		<form>
-		  <div>
-		    <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
-		    <label for="subscribeNews">FREELANCE</label>
-		    <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
-		    <label for="subscribeNews">FULL TIME</label>
-		    <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
-		    <label for="subscribeNews">PART TIME</label>
-		    <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
-		    <label for="subscribeNews">TEMPORARY</label>
-		  </div>
+      <div class="checkbox checkbox-inline checkbox-primary">
+          <input id="checkbox1" class="styled" type="checkbox">
+          <label for="checkbox1">
+              FREELANCE
+          </label>
+      </div>
+
+      <div class="checkbox checkbox-inline checkbox-primary">
+          <input id="checkbox2" class="styled" type="checkbox">
+          <label for="checkbox2">
+              FULL TIME
+          </label>
+      </div>
+
+      <div class="checkbox checkbox-inline checkbox-primary">
+          <input id="checkbox3" class="styled" type="checkbox">
+          <label for="checkbox3">
+              PART TIME
+          </label>
+      </div>
+
+      <div class="checkbox checkbox-inline checkbox-primary">
+          <input id="checkbox4" class="styled" type="checkbox">
+          <label for="checkbox4">
+              TEMPORARY
+          </label>
+      </div>
 
 		</form>
+  </div>
 	</div>
 
 </div>
 <div class="container sixth-content">
 	<div class="row sixth-row">
 		<div class="col-md-1">
-			<img src="http://localhost:84/RC/wp-content/uploads/2017/10/box.png">
+			<img src="<?= IMAGEPATH.'placeholder.png' ?>">
 		</div>
 		<div class="col-md-5">
 			<h5>Job Title</h5>
@@ -91,12 +110,9 @@
 			<a class="btn" href="">VIEW JOB</a>
 		</div>
 	</div>
-
-</div>
-<div class="container sixth-content">
-	<div class="row sixth-row">
+  <div class="row sixth-row">
 		<div class="col-md-1">
-			<img src="http://localhost:84/RC/wp-content/uploads/2017/10/box.png">
+			<img src="<?= IMAGEPATH.'placeholder.png' ?>">
 		</div>
 		<div class="col-md-5">
 			<h5>Job Title</h5>
