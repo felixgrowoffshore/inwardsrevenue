@@ -88,20 +88,74 @@
    			margin-top: 2px;
    			margin-right: 40px;
    			width: 400px;
-
-   		
-
 		}
-
-
 		.btn{
 			background-color: #ca2327;
 
 		}
+		#filter{
+			padding-bottom: 100px;
 
-		.tag{
-			text-transform: lowercase;
+
+			p{
+				padding-left: 0px;
+				margin-top: 10px;
+				color: #fff;
+			}
+			.tag{
+				text-transform: lowercase;
+			    width: 110px;
+			    right: 35px;
+			    margin-right: 20px;
+			    margin-top: 10px;
+		 	 }
+
 		}
 	  }
+	}
+}
+
+.fifth-content{
+	.fifth-row{
+		padding-left: 20px;
+		padding-top: 36em;
+		padding-bottom: 15px;
+		border-bottom: 2px solid #000;
+
+	label{
+		padding-right: 15px;
+	}
+  }
+}
+
+
+.sixth-content{
+	border-bottom: 2px solid #000;
+	height: auto;
+
+	.sixth-row{
+		margin-top: 20px;
+	}
+
+	h5{
+		margin: 0px;
+	}
+
+	a{
+		color: #000;
+	}
+
+	.london{
+
+		p{
+			padding-top: 31.5px;
+		}
+	}
+
+	.view-job{
+		a{
+			float: right;
+			margin-top: 9px;
+		}	
 	}
 }
