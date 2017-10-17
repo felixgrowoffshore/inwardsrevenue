@@ -26,16 +26,16 @@
 		<header id="masthead" class="site-header navbar-fixed-top">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4 col-sm-7 col-xs-8 logo">
+					<div class="col-md-2 col-sm-2 col-xs-8 logo">
 						<div class="site-branding">
 							<?php
 							the_custom_logo();
 							?>
 						</div><!-- .site-branding -->
 					</div>
-					<div class="col-md-8 col-sm-5 col-xs-4 flex-center nav-bar">
+					<div class="col-md-10 col-sm-10 col-xs-4 flex-center nav-bar">
 						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-secondary" aria-expanded="false" aria-controls="navbar">
 								<span class="sr-only">Toggle navigation</span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
@@ -43,6 +43,9 @@
 							</button>
 						</div>
 						<div id="navbar" class="navbar-collapse collapse">
+							<div class="head-bar">
+								<i class="fa fa-bars" data-toggle="collapse" data-target="#navbar-secondary" aria-expanded="true"></i>
+							</div>
 							<?php
 								wp_nav_menu( array(
 									'theme_location' => 'menu-1',
@@ -50,7 +53,22 @@
 									'menu_class'					 => 'nav navbar-nav navbar-right'
 								) );
 							?>
+
 						</div><!--/.nav-collapse -->
+
+					</div>
+					<!-- Secondary menu -->
+					<div id="navbar-secondary" class="collapse">
+						<div class="navbar-secondary">
+							<i class="fa fa-times-circle-o secondary-close" data-toggle="collapse" data-target="#navbar-secondary" aria-expanded="true"></i>
+							<?php
+								wp_nav_menu( array(
+									'theme_location' => 'menu-2',
+									'menu_id'        => 'secondary-menu',
+									'menu_class'					 => 'nav navbar-nav navbar-center'
+								) );
+							?>
+						</div>
 					</div>
 					</div>
 				</div>
