@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package RC
+ * @package inward-revenue
  */
 
 ?>
@@ -42,4 +42,8 @@
 						</div>	
 					</div>
 				</div>
+<<<<<<< HEAD
 				
+=======
+			</div>
+>>>>>>> 87def3ba374e4222edf92acff0adccd8a6a065ff

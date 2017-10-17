@@ -2,7 +2,7 @@
 /**
  * CAP Theme Theme Customizer
  *
- * @package CAP_Theme
+ * @package inward-revenue
  */
 
 /**

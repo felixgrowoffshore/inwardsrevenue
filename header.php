@@ -23,9 +23,9 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<div class="header_wrap"><div class="container">
-		<header id="masthead" class="site-header">
+		<header id="masthead" class="site-header navbar-fixed-top">
+			<div class="container">
 				<div class="row">
-					<h1 class="title"><a href="/RC"><img class="logo" src="http://localhost:84/RC/wp-content/uploads/2017/10/logo.png"></a></h1>
 					<div class="col-md-4 col-sm-7 col-xs-8 logo">
 						<div class="site-branding">
 							<?php
@@ -35,14 +35,14 @@
 					</div>
 					<div class="col-md-8 col-sm-5 col-xs-4 flex-center nav-bar">
 						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-mobile" aria-expanded="false" aria-controls="navbar">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 								<span class="sr-only">Toggle navigation</span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
 						</div>
-						<div id="navbar" class="navbar-collapse collapse hide_mobile">
+						<div id="navbar" class="navbar-collapse collapse">
 							<?php
 								wp_nav_menu( array(
 									'theme_location' => 'menu-1',
@@ -52,7 +52,8 @@
 							?>
 						</div><!--/.nav-collapse -->
 					</div>
+					</div>
 				</div>
 			</header><!-- #masthead -->
-		</div></div>
+	</div></div>
 	<div id="content" class="">

@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package CAP_Theme
+ * @package inward-revenue
  */
 
 if ( ! function_exists( 'cap_theme_setup' ) ) :
@@ -45,7 +45,10 @@ if ( ! function_exists( 'cap_theme_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'cap-theme' ),
+			'menu-2' => esc_html__( 'Secondary', 'cap-theme' ),
 		) );
+
+
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments

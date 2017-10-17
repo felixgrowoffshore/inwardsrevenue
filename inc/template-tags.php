@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package CAP_Theme
+ * @package inward-revenue
  */
 
 if ( ! function_exists( 'cap_theme_posted_on' ) ) :
