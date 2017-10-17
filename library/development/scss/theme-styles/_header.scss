@@ -93,6 +93,12 @@
 
 .featured_image{
 	height : 30vh;
+	display: flex;
+	position: relative;
+	img{
+		object-fit: cover;
+		width: 100%;
+	}
 
 	.feat-info{
 		position: absolute;
