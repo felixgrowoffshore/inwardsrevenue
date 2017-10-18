@@ -4,8 +4,16 @@
   $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
   //$description = $thumb_img->post_content; ?>
     <div class="featured_image" style="background-image:url('<?php the_post_thumbnail_url('full'); ?>');">
-
-      <div class="feat-info">
+      <?php
+      $colour = get_field('colour');
+      $rgb = hex2rgba($colour,0.7);
+      ?>
+      <style>
+      .site-header .custom-logo{
+        background-color: <?= $colour ?>;
+      }
+      </style>
+      <div class="feat-info" style="background-color:<?= $rgb ?>">
         <h1><?= the_title(); ?></h1>
         <?php
         // TO SHOW THE PAGE CONTENTS
