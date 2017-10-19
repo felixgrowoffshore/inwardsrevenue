@@ -1,5 +1,6 @@
 .site-header{
 	padding-top: 40px;
+	padding-bottom: 20px;
 	.custom-logo{
 		max-width: 100px;
 	}
@@ -93,11 +94,13 @@
 		    line-height: 43px;
 			}
 		}
+
 	}
 }
 
 .featured_image{
-	height : 30vh;
+	max-height : 40vh;
+	height : 40vh;
 	display: flex;
 	position: relative;
 	background-attachment: fixed;
@@ -125,7 +128,28 @@
 		}
 		p{
 			font-size: 22pt;
-			padding : 15px;
+			padding : 0 10%;
+		}
+		& > div{
+			display: flex;
+			width: 100%;
+			height: 50%;
+			&.title{
+				justify-content: center;
+				align-items: flex-end;
+				// background-attachment: fixed;
+				background-position: bottom;
+				background-repeat: no-repeat;
+				background-size: contain;
+				h1{
+					margin: 0;
+				}
+			}
+			&.desc{
+				justify-content: center;
+				align-items: flex-start;
+				// padding : 0 15%;
+			}
 		}
 	}
 }

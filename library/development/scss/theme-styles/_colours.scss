@@ -1,25 +1,148 @@
+$op-base: 0.2;
+$op-base-light : 0.1;
+
 .colours{
-  // #BC0E1E
-  // #8E0000
-  // #3F3F3F
-  // #CA2685
-  // #9D1F63
-  // #00A23D
-  // #94BF38
-  // #597C1C
-  // #00790d
-  // #334B00
-  // #E5A900
-  // #D7831E
-  // #fdf8ea
-  // #EAF6FC
-  // #E0F2F9
-  // #D5EDF8
-  // #F7DDEC
-  // #FBEEF5
-  // #F9E6F1
-  // #F7DDEC
-  // #F5D4E6
-  // #F3CBE1
-  // #0091D3
+  background-color: transparentize($brand-primary,$op-base);
+  // padding: 20px;
+  &.light-red{
+    background-color: transparentize(#ca2327,$op-base);
+  }
+  &.red{
+    background-color: transparentize(#a01800,$op-base);
+  }
+  &.gray{
+    background-color: transparentize(#505050,$op-base);
+  }
+  &.blue{
+    background-color: transparentize(#47a3dc,$op-base);
+  }
+  &.light-pink{
+    background-color: transparentize(#d64196,$op-base);
+  }
+  &.pink{
+    background-color: transparentize(#af3576,$op-base);
+  }
+  &.blue-green{
+    background-color: transparentize(#40ae4e,$op-base);
+  }
+  &.yellow-green{
+    background-color: transparentize(#a4c648,$op-base);
+  }
+  &.brown-green{
+    background-color: transparentize(#6b8c26,$op-base);
+  }
+  &.green{
+    background-color: transparentize(#30890c,$op-base);
+  }
+  &.avocado-green{
+    background-color: transparentize(#425b00,$op-base);
+  }
+  &.yellow{
+    background-color: transparentize(#ebb600,$op-base);
+  }
+  &.orange{
+    background-color: transparentize(#e09527,$op-base);
+  }
+  &.light-yellow{
+    background-color: transparentize(#fdfaee,$op-base);
+  }
+  &.blue1{
+    background-color: transparentize(#eef8fe,$op-base);
+  }
+  &.blue2{
+    background-color: transparentize(#e6f5fb,$op-base);
+  }
+  &.blue3{
+    background-color: transparentize(#ddf1f9,$op-base);
+  }
+  &.pink1{
+    background-color: transparentize(#fcf2f7,$op-base);
+  }
+  &.pink2{
+    background-color: transparentize(#fbecf4,$op-base);
+  }
+  &.pink3{
+    background-color: transparentize(#f9e4f0,$op-base);
+  }
+  &.pink4{
+    background-color: transparentize(#f8dceb,$op-base);
+  }
+  &.pink5{
+    background-color: transparentize(#f6d5e7,$op-base);
+  }
+}
+
+
+
+.site-header{
+  &.light-red{
+    background-color: transparentize(#ca2327,$op-base-light);
+  }
+  &.red{
+    background-color: transparentize(#a01800,$op-base-light);
+  }
+  &.gray{
+    background-color: transparentize(#505050,$op-base-light);
+  }
+  &.blue{
+    background-color: transparentize(#47a3dc,$op-base-light);
+  }
+  &.light-pink{
+    background-color: transparentize(#d64196,$op-base-light);
+  }
+  &.pink{
+    background-color: transparentize(#af3576,$op-base-light);
+  }
+  &.blue-green{
+    background-color: transparentize(#40ae4e,$op-base-light);
+  }
+  &.yellow-green{
+    background-color: transparentize(#a4c648,$op-base-light);
+  }
+  &.brown-green{
+    background-color: transparentize(#6b8c26,$op-base-light);
+  }
+  &.green{
+    background-color: transparentize(#30890c,$op-base-light);
+  }
+  &.avocado-green{
+    background-color: transparentize(#425b00,$op-base-light);
+  }
+  &.yellow{
+    background-color: transparentize(#ebb600,$op-base-light);
+  }
+  &.orange{
+    background-color: transparentize(#e09527,$op-base-light);
+  }
+  &.light-yellow{
+    background-color: transparentize(#fdfaee,$op-base-light);
+  }
+  &.blue1{
+    background-color: transparentize(#eef8fe,$op-base-light);
+  }
+  &.blue2{
+    background-color: transparentize(#e6f5fb,$op-base-light);
+  }
+  &.blue3{
+    background-color: transparentize(#ddf1f9,$op-base-light);
+  }
+  &.pink1{
+    background-color: transparentize(#fcf2f7,$op-base-light);
+  }
+  &.pink2{
+    background-color: transparentize(#fbecf4,$op-base-light);
+  }
+  &.pink3{
+    background-color: transparentize(#f9e4f0,$op-base-light);
+  }
+  &.pink4{
+    background-color: transparentize(#f8dceb,$op-base-light);
+  }
+  &.pink5{
+    background-color: transparentize(#f6d5e7,$op-base-light);
+  }
+}
+
+.colour-disabled{
+  background-color: transparent !important;
 }
