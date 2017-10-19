@@ -181,9 +181,19 @@ hr {
           font-weight: bold;
 }
 
-
+//IRC 50 
 .bottom-links{
     float: right;
     right: 13px;
     margin-top: 25px;
+}
+
+.diagonal-background{
+  background-color: #013A6B;
+     background-image: -webkit-linear-gradient(50deg, #ffccff 50%, #f3bce1 50%);
+}
+
+.diagonal-background-rev{
+  background-color: #013A6B;
+     background-image: -webkit-linear-gradient(50deg, #f3bce1 50%, #ffccff 50%);
 }
