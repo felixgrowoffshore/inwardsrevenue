@@ -10,6 +10,11 @@
 
 	.irc-wrap1{
 		 @extend .diagonal-background;
+
+	}
+
+	.irc-wrap1:hover {
+		 @extend .diagonal-background-hover;
 		 
 	}
 
