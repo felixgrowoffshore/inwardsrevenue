@@ -1,3 +1,6 @@
+p{
+	font-size: 24pt;
+}
 .home-feat-wrap{
 
 	.client-row{
@@ -5,6 +8,8 @@
 		color: #fff;
 		h1{
 		color: #fff;
+		font-size: $font-size-h1;
+
 
 		}
 	}
@@ -24,6 +29,7 @@
 				
 				h3{
 					@extend .h3-style;
+					font-size: $font-size-h3;
 				}
 			}
 
@@ -52,7 +58,7 @@
 				
 				h3{
 					@extend .h3-style;
-
+					font-size: $font-size-h3;
 				}
 			}
 
@@ -81,6 +87,7 @@
 				
 				h3{
 					@extend .h3-style;
+					font-size: $font-size-h3;
 				}
 			}
 
@@ -110,6 +117,7 @@
 				
 				h3{
 					@extend .h3-style;
+					font-size: $font-size-h3;
 				}
 			}
 
@@ -136,6 +144,7 @@
 				
 				h3{
 					@extend .h3-style;
+					font-size: $font-size-h3;
 				}
 			}
 
@@ -151,7 +160,7 @@
 	}
 
 	.wrapper-6{
-		background-color: #d64197 !important;
+		background-color: #CA2685;
 		.client-con6{
 			
 			.client-row6{
@@ -163,7 +172,7 @@
 	}
 
 	.wrapper-7{
-		background-color: #b3357d;
+		background-color: #9d1f63;
 		.client-con7{
 			
 			.client-row7{
@@ -176,7 +185,3 @@
 	
 
 }
-/*.client-con2{
-		background-color: #f9e6f1;
-		margin-bottom: 30px;
-	}*/
