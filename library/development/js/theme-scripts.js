@@ -44,15 +44,16 @@ jQuery(document).ready(function($){
   });
 
   $(window).scroll(function(){
-    $(".fade-4").css("opacity", 1 - $(window).scrollTop() / 2150);
-    $(".side-p4").css("opacity", 1 - $(window).scrollTop() / 2150);
+    $(".fade-4").css("opacity", 1 - $(window).scrollTop() / 3100);
+    $(".side-p4").css("opacity", 1 - $(window).scrollTop() / 3100);
     $(".side-p4").animate({left:100, opacity:"show"}, 2500);
   });
 
   $(window).scroll(function(){
-    $(".fade-5").css("opacity", 1 - $(window).scrollTop() / 3000);
-    $(".side-p5").css("opacity", 1 - $(window).scrollTop() / 3000);
+    $(".fade-5").css("opacity", 1 - $(window).scrollTop() / 5000);
+    $(".side-p5").css("opacity", 1 - $(window).scrollTop() / 5000);
     $(".side-p5").animate({left:100, opacity:"show"}, 3000);
   });
 
+   
 });
