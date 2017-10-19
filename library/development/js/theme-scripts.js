@@ -2,11 +2,24 @@ jQuery(document).ready(function($){
 
   // preparation for overriding the default select html tag
   $('select').niceSelect();
-
+  var element_position = $('#next-block').offset().top;
   $(".next-block").click(function() {
     $('html, body').animate({
-      scrollTop: $("#next-block").offset().top
+      scrollTop: element_position
     }, 1000);
+  });
+
+
+  $(window).on('scroll', function() {
+      var y_scroll_pos = window.pageYOffset;
+      var scroll_pos_test = element_position - 200;
+
+      if(y_scroll_pos > scroll_pos_test) {
+          // console.log('colour-disabled');
+          $("#masthead").removeClass('colour-disabled');
+      } else {
+        $("#masthead").addClass('colour-disabled');
+      }
   });
 
 
@@ -43,7 +56,3 @@ jQuery(document).ready(function($){
   });
 
 });
-
-
-
-

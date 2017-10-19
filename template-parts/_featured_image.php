@@ -3,32 +3,29 @@
   //$thumb_img = get_post( $thumbnail_id );
   $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
   //$description = $thumb_img->post_content; ?>
-    <div class="featured_image" style="background-image:url('<?php the_post_thumbnail_url('full'); ?>');">
-      <?php
-      $colour = get_field('colour');
-      $rgb = hex2rgba($colour,0.7);
-      ?>
-      <style>
-      .site-header .custom-logo{
-        background-color: <?= $colour ?>;
-      }
-      </style>
-      <div class="feat-info" style="background-color:<?= $rgb ?>">
+  <div class="featured_image" style="background-image:url('<?php the_post_thumbnail_url('full'); ?>');">
+    <?php
+    $colour = get_field('colour');
+    // $rgb = hex2rgba($colour,0.7);
+    $sec_feat = get_field('secondary_featured_image');
+    ?>
+
+    <div class="feat-info colours <?=$colour?>">
+
+      <div class="title <?=$colour?>" style="background-image:url('<?=$sec_feat['url']?>');">
         <h1><?= the_title(); ?></h1>
+      </div>
+      <div class="desc">
         <?php
-        // TO SHOW THE PAGE CONTENTS
-        while ( have_posts() ) : the_post(); ?>
+          // TO SHOW THE PAGE CONTENTS
+          while ( have_posts() ) : the_post(); ?>
           <?php if( '' !== get_post()->post_content ) : ?>
-            <?=  the_content(); ?>
+          <?=  the_content(); ?>
           <?php endif;
         endwhile; ?>
-
       </div>
-      <?php if(is_front_page()) : ?>
-        <p class="btn-next"><a class="next-block" href="#next-block"><i class="fa fa-long-arrow-down"></i></a></p>
-      <?php endif; ?>
     </div>
-    <?php if(is_front_page()) : ?>
-      <div id="next-block"></div>
-    <?php endif; ?>
+    <p class="btn-next"><a class="next-block" href="#next-block"><i class="fa fa-long-arrow-down"></i></a></p>
+  </div>
+  <div id="next-block"></div>
 <?php endif; ?>
