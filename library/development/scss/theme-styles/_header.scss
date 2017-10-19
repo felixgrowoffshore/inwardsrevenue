@@ -71,6 +71,7 @@
 		max-height : 100vh;
 		height : 100vh;
 		display: flex;
+
 		img{
 			object-fit: cover;
 			width: 100%;
@@ -95,6 +96,10 @@
 	height : 30vh;
 	display: flex;
 	position: relative;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	img{
 		object-fit: cover;
 		width: 100%;
