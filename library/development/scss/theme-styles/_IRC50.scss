@@ -1,54 +1,13 @@
 .irc-con{
 	text-align: center;
-	/*background-color: #f7ddec;*/
-
-	/*.slide-1{
-		background:url('http://localhost:84/RC/wp-content/uploads/2017/10/slide.png');
-		height: 200px;
-		position: absolute;
-		z-index: 0;
-		
 	
-	}
-
-	.slide-2{
-		background: url('http://localhost:84/RC/wp-content/uploads/2017/10/slide1.png');
-		height: 200px;
-		position: absolute;
-		z-index: 0;
-		text-align: center right;
-		float: right;
-	    margin-left: 33em;
-	    width: 1111px;
-	}
-*/
 	h2{
 		color: #9D1F63;
 		font-weight: bold;
 	}
 
 	.irc-wrap1{
- 
-		.img1{
-			position: absolute;
-			z-index: 0;
-			left: 0px;
-			float: left;
-			text-align: left;
-			left: -417.5px;
-		}
-
-		.img2{
-			position: absolute;
-			z-index: 0;
-			right: 0px;
-			float: right;
-			text-align: right;
-			right: -417.5px;
-		}
-
-
-		
+		 @extend .diagonal-background;
 	}
 
 	.irc-wrap1:hover{
@@ -57,9 +16,7 @@
 		
 		}
 
-	
-
-	/*.irc-wrap2{
+	.irc-wrap2{
 		 @extend .diagonal-background-rev;
 	}
 
@@ -90,5 +47,5 @@
 
 	.irc-wrap9{
 		@extend .diagonal-background;
-		}*/
+		}
 }

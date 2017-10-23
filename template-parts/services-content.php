@@ -45,10 +45,12 @@
 		<div class="col-md-12">
 			
 			<ul class="irc-profile">
-				<li><i class="fa fa-check" aria-hidden="true"></i> IRC database search </li>
-				<li><i class="fa fa-check" aria-hidden="true"></i> Quality candidates  </li>
-				<li><i class="fa fa-check" aria-hidden="true"></i> Telephone Interviews </li>
-				<li><i class="fa fa-check" aria-hidden="true"></i> Management of offer, hire and negotiation process </li>
+				<li><i class="fa fa-check" aria-hidden="true"> All of DISCOVER plus: </i></li>
+				<li><i class="fa fa-check" aria-hidden="true"> Vacancy analysis and strategy workshop </i></li>
+				<li><i class="fa fa-check" aria-hidden="true"> Video Jobcasts </i></li>
+				<li><i class="fa fa-check" aria-hidden="true"> Targeted PPC campaign </i></li>
+				<li><i class="fa fa-check" aria-hidden="true"> face to face interviews </i></li>
+				<li><i class="fa fa-check" aria-hidden="true"> Risk and share scheme </i></li>
 			</ul>
 
 		</div>
@@ -58,21 +60,21 @@
 	</div>
 
 	<div class="col-md-3 irc-col4">
-		<h2>IRC PROFILE</h2>
-		<p>Best for easier fit roles</p>
+		<h2>IRC Talent Partner</h2>
+		<p>A truly comprehensive service.</p>
 
 		<div class="col-md-12">
 			
 			<ul class="irc-profile">
-				<li><i class="fa fa-check" aria-hidden="true"></i> IRC database search </li>
-				<li><i class="fa fa-check" aria-hidden="true"></i> Quality candidates  </li>
-				<li><i class="fa fa-check" aria-hidden="true"></i> Telephone Interviews </li>
-				<li><i class="fa fa-check" aria-hidden="true"></i> Management of offer, hire and negotiation process </li>
+				<li><i class="fa fa-check" aria-hidden="true"> All of engage plus: </i></li>
+				<li><i class="fa fa-check" aria-hidden="true"> Your own dedicated IRC resources </i></li>
+				<li><i class="fa fa-check" aria-hidden="true"> Full access to all of IRC's tools and services </i></li>
+				<li><i class="fa fa-check" aria-hidden="true"> All of IRC's proven experoennce and expertise at your disposal </i></li>
 			</ul>
 
 		</div>
 
-			<a class="btn" href="#">SIGN UP</a>
+			<a class="btn" href="#">CALL US</a>
 			<a class="btn" href="#">FIND OUT MORE</a>
 	</div>
 
