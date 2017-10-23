@@ -1,11 +1,15 @@
-.service-row{
+.service-wrapper{
 	text-align: center;
+	color: #fff;
 	
+
+	h2{
+		color: #fff;
+		font-weight: bold;
+	}
 
 	.irc-col1{
 		height: 800px;
-		background-color: #99cc33;
-
 		.col-md-12{
 			
 			.irc-profile {
@@ -13,25 +17,37 @@
 				text-align: left;
 			}
 
-		.info-links{
-			a{
-				position: absolute;
-				bottom: 10px
-			}
+		
 		}
+
+		.info-links{
+			
+			a{
+				@extend .service-button;
+				
+			}
 
 		}
 	}
 
 	.irc-col2{
 		height: 800px;
-		background-color: #669933;
 
 		.col-md-12{
 			
 			.irc-profile {
 				list-style: none;
 				text-align: left;
+			}
+
+		}
+
+		.info-links{
+			
+			
+			a{
+				@extend .service-button;
+				
 			}
 
 		}
@@ -39,13 +55,20 @@
 
 	.irc-col3{
 		height: 800px;
-		background-color: #009900;
 
 		.col-md-12{
 			
 			.irc-profile {
 				list-style: none;
 				text-align: left;
+			}
+
+		}
+
+		.info-links{
+			
+			a{
+				@extend .service-button;
 			}
 
 		}
@@ -53,7 +76,6 @@
 
 	.irc-col4{
 		height: 800px;
-		background-color: #336600;
 
 		.col-md-12{
 			
@@ -63,5 +85,36 @@
 			}
 
 		}
+
+		.info-links{
+			
+			a{
+				@extend .service-button;
+				
+			}
+
+		}
+	}
+
+	.info-row{
+
+	h2{
+		text-align: left;
+		color: #fff;
+		padding-left: 50%;
+		font-weight: bold;
+	}
+
+	p{
+		padding: 50px;
+		margin-right: 50px;
+		text-align: left;
 	}
 }
+
+
+}
+
+
+
+
