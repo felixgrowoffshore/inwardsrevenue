@@ -1,6 +1,6 @@
-<div class="row service-row">
-	<div class="col-md-3 irc-col1">
-		<h2>IRC <br> Profile</h2>
+<div class="wrapper service-wrapper">
+	<div class="col-md-3 col-sm-6 col-xs-12 irc-col1 colours yellow-green">
+		<h2>IRC Profile</h2>
 		<p>Best for easier fit roles</p>
 
 		<div class="col-md-12">
@@ -14,12 +14,14 @@
 
 		</div>
 
-			<a class="btn" href="#">SIGN UP</a>
-			<a class="btn" href="#">FIND OUT MORE</a>
+		<div class="info-links">
+			<a class="btn" href="../irc-profile/">SIGN UP</a>
+			<a class="btn" href="../irc-profile/">FIND OUT MORE</a>
+		</div>
 	</div>
 
-	<div class="col-md-3 irc-col2">
-		<h2>IRC <br> Discover</h2>
+	<div class="col-md-3 col-sm-6 col-xs-12 irc-col2 colours brown-green">
+		<h2>IRC Discover</h2>
 		<p>For when you need to look a little further</p>
 
 		<div class="col-md-12">
@@ -34,12 +36,14 @@
 
 		</div>
 
+		<div class="info-links">
 			<a class="btn" href="#">SIGN UP</a>
 			<a class="btn" href="#">FIND OUT MORE</a>
+		</div>
 	</div>
 
-	<div class="col-md-3 irc-col3">
-		<h2>IRC <br> Engage</h2>
+	<div class="col-md-3 col-sm-6 col-xs-12 irc-col3 colours green">
+		<h2>IRC Engage</h2>
 		<p>Great for mission-critical or hard to fill roles.</p>
 
 		<div class="col-md-12">
@@ -55,11 +59,14 @@
 
 		</div>
 
+		<div class="info-links">
 			<a class="btn" href="#">SIGN UP</a>
 			<a class="btn" href="#">FIND OUT MORE</a>
+		</div>
+
 	</div>
 
-	<div class="col-md-3 irc-col4">
+	<div class="col-md-3 col-sm-6 col-xs-12 irc-col4 colours avocado-green">
 		<h2>IRC Talent Partner</h2>
 		<p>A truly comprehensive service.</p>
 
@@ -74,8 +81,21 @@
 
 		</div>
 
-			<a class="btn" href="#">CALL US</a>
+		<div class="info-links">
+			<a class="btn" href="#">SIGN UP</a>
 			<a class="btn" href="#">FIND OUT MORE</a>
+		</div>
 	</div>
 
+<div class="col-md-12 colours blue-green info-row">
+	<div class="col-md-4 ">
+		<h2>ACTIONS NOT WORDS</h2>
+	</div>
+	<div class="col-md-8">
+		<p>Recruiting sales people is sometimes painful and you shouldn't worry as we can help make it  a lot easier. The difference between getting it wrong or right is often the difference between your success and failure in your own role. Our proven consistent methodlogy coupled with our comfort in sharing the risk of hiring with you means you can be fully assured. Call us to find out how we can making sales hiring easier for you.</p>
+	</div>
+	
+</div>
+
 </div>	
+

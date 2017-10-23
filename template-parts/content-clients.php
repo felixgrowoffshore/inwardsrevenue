@@ -1,5 +1,5 @@
 
-<div class="col-md-12 client-con">
+<div class="client-con pink1 colours">
 	<div class="container client-cont1">
 		<div class="client-fade">
 			<h3 class="col-md-1 col-sm-2 col-xs-3 number">1</h3>
@@ -14,7 +14,7 @@
 		</div>
 	</div>
 </div>
-<div class="col-md-12 client-con">
+<div class="pink2 colours client-con">
 	<div class="container client-cont2">
 		<div class="client-fade">
 			<h3 class="col-md-1 col-sm-2 col-xs-3 number">2</h3>
@@ -29,7 +29,7 @@
 		</div>
 	</div>
 </div>
-<div class="col-md-12 client-con">
+<div class="client-con pink3 colours">
 	<div class="container client-cont3">
 		<div class="client-fade">
 			<h3 class="col-md-1 col-sm-2 col-xs-3 number">3</h3>
@@ -44,7 +44,7 @@
 		</div>
 	</div>
 </div>
-<div class="col-md-12 client-con">
+<div class="pink4 colours client-con">
 	<div class="container client-cont4">
 		<div class="client-fade">
 			<h3 class="col-md-1 col-sm-2 col-xs-3 number">4</h3>
@@ -59,7 +59,7 @@
 		</div>
 	</div>
 </div>
-<div class="col-md-12 client-con">
+<div class="pink5 colours client-con">
 	<div class="container client-cont5">
 		<div class="client-fade">
 			<h3 class="col-md-1 col-sm-2 col-xs-3 number">5</h3>
@@ -74,7 +74,7 @@
 		</div>
 	</div>
 </div>
-<div class="wrapper wrapper-6">
+<div class="wrapper wrapper-6 light-pink colours">
 <div class="container client-con6">
 	<div class="row client-row6">
 		<h5 class="col-md-6 offset-md-3">Find out about the process all your candidates will go through...</h5>
@@ -82,7 +82,7 @@
 	</div>
 </div>
 </div>
-<div class="wrapper wrapper-7">
+<div class="wrapper wrapper-7 pink colours">
 <div class="container client-con7">
 	<div class="row client-row7">
 		<h5 class="col-md-6 offset-md-3">Find out about the process all your candidates will go through...</h5>
