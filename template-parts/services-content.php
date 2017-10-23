@@ -15,8 +15,8 @@
 		</div>
 
 		<div class="info-links">
-			<a class="btn" href="#">SIGN UP</a>
-			<a class="btn" href="#">FIND OUT MORE</a>
+			<a class="btn" href="../irc-profile/">SIGN UP</a>
+			<a class="btn" href="../irc-profile/">FIND OUT MORE</a>
 		</div>
 	</div>
 

@@ -1,120 +1,125 @@
-.service-wrapper{
+.home-content{
 	text-align: center;
-	color: #fff;
+
 	
-
-	h2{
+	.service-wrapper{
+		text-align: center;
 		color: #fff;
-		font-weight: bold;
-	}
-
-	.irc-col1{
-		height: 800px;
-		.col-md-12{
-			
-			.irc-profile {
-				list-style: none;
-				text-align: left;
-			}
-
 		
+
+		h2{
+			color: #fff;
+			font-weight: bold;
 		}
 
-		.info-links{
-			
-			a{
-				@extend .service-button;
+		.irc-col1{
+			height: 800px;
+			.col-md-12{
 				
+				.irc-profile {
+					list-style: none;
+					text-align: left;
+				}
+
+			
 			}
 
-		}
-	}
-
-	.irc-col2{
-		height: 800px;
-
-		.col-md-12{
-			
-			.irc-profile {
-				list-style: none;
-				text-align: left;
-			}
-
-		}
-
-		.info-links{
-			
-			
-			a{
-				@extend .service-button;
+			.info-links{
 				
+				a{
+					@extend .service-button;
+					
+				}
+
 			}
-
-		}
-	}
-
-	.irc-col3{
-		height: 800px;
-
-		.col-md-12{
-			
-			.irc-profile {
-				list-style: none;
-				text-align: left;
-			}
-
 		}
 
-		.info-links{
-			
-			a{
-				@extend .service-button;
-			}
+		.irc-col2{
+			height: 800px;
 
-		}
-	}
-
-	.irc-col4{
-		height: 800px;
-
-		.col-md-12{
-			
-			.irc-profile {
-				list-style: none;
-				text-align: left;
-			}
-
-		}
-
-		.info-links{
-			
-			a{
-				@extend .service-button;
+			.col-md-12{
 				
+				.irc-profile {
+					list-style: none;
+					text-align: left;
+				}
+
 			}
 
+			.info-links{
+				
+				
+				a{
+					@extend .service-button;
+					
+				}
+
+			}
+		}
+
+		.irc-col3{
+			height: 800px;
+
+			.col-md-12{
+				
+				.irc-profile {
+					list-style: none;
+					text-align: left;
+				}
+
+			}
+
+			.info-links{
+				
+				a{
+					@extend .service-button;
+				}
+
+			}
+		}
+
+		.irc-col4{
+			height: 800px;
+
+			.col-md-12{
+				
+				.irc-profile {
+					list-style: none;
+					text-align: left;
+				}
+
+			}
+
+			.info-links{
+				
+				a{
+					@extend .service-button;
+					
+				}
+
+			}
+		}
+
+		.info-row{
+
+		h2{
+			text-align: left;
+			color: #fff;
+			padding-left: 50%;
+			font-weight: bold;
+		}
+
+		p{
+			padding: 50px;
+			margin-right: 50px;
+			text-align: left;
 		}
 	}
 
-	.info-row{
 
-	h2{
-		text-align: left;
-		color: #fff;
-		padding-left: 50%;
-		font-weight: bold;
 	}
 
-	p{
-		padding: 50px;
-		margin-right: 50px;
-		text-align: left;
-	}
+
 }
-
-
-}
-
-
 
 
