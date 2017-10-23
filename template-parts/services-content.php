@@ -15,7 +15,7 @@
 		</div>
 
 		<div class="info-links">
-			<a class="btn" href="../irc-profile/">SIGN UP</a>
+			<a class="btn" href="#">SIGN UP</a>
 			<a class="btn" href="../irc-profile/">FIND OUT MORE</a>
 		</div>
 	</div>
@@ -37,7 +37,7 @@
 		</div>
 
 		<div class="info-links">
-			<a class="btn" href="../irc-discover/">SIGN UP</a>
+			<a class="btn" href="#">SIGN UP</a>
 			<a class="btn" href="../irc-discover/">FIND OUT MORE</a>
 		</div>
 	</div>
@@ -60,7 +60,7 @@
 		</div>
 
 		<div class="info-links">
-			<a class="btn" href="../irc-engage/">SIGN UP</a>
+			<a class="btn" href="#">SIGN UP</a>
 			<a class="btn" href="../irc-engage/">FIND OUT MORE</a>
 		</div>
 
@@ -82,7 +82,7 @@
 		</div>
 
 		<div class="info-links">
-			<a class="btn" href="../irc-talent-partner/">SIGN UP</a>
+			<a class="btn" href="#">SIGN UP</a>
 			<a class="btn" href="../irc-talent-partner/">FIND OUT MORE</a>
 		</div>
 	</div>
