@@ -28,7 +28,7 @@ var pos = $(".client-con").map(function(){
   var $this = $(this);
   return {
     el: $this,
-    top: $this.offset().top
+    top: $this.offset().top +100
   };
 }).get();
 
