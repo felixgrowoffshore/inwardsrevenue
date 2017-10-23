@@ -64,7 +64,7 @@ p{
 				}
 			}
 
-			.fade-1{
+			.fade-2{
 				opacity: 1;
 			}
 
@@ -93,7 +93,7 @@ p{
 				}
 			}
 
-			.fade-1{
+			.fade-3{
 				opacity: 1;
 			}
 
@@ -123,7 +123,7 @@ p{
 				}
 			}
 
-			.fade-1{
+			.fade-4{
 				opacity: 1;
 			}
 
@@ -139,19 +139,22 @@ p{
 		.client-cont5{
 
 			.number{
-				@extend .number;
+				@extend .number-syle;
 			}
 
 			.scope{
-				
+
 				h3{
 					@extend .h3-style;
 					font-size: $font-size-h3;
 				}
+				
 			}
 
-			.fade-1{
+			.fade-5{
 				opacity: 1;
+
+				
 			}
 			
 			.side-p5{

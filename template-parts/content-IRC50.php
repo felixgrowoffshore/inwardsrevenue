@@ -1,6 +1,9 @@
 <div class="irc-con">
 
 	<div class="wrapper irc-wrap1">
+	<img class="img1" src="http://localhost:84/RC/wp-content/uploads/2017/10/ms2.png">
+	<img class="img2" src="http://localhost:84/RC/wp-content/uploads/2017/10/ms1.png">
+
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -8,9 +11,13 @@
 				<p>Do the long term goals of the organisation meet the long term goals of the organisation?</p>
 			</div>		
 		</div>
-	</div>
-	</div>
+	</div>	
+			
+					<div class="col-md-6 slide-1"></div>
+					<div class="col-md-6 slide-2"></div>
 
+					
+	</div>
 	<div class="wrapper irc-wrap2">
 	<div class="container">
 		<div class="row">
@@ -99,6 +106,7 @@
 		</div>
 	</div>
 	</div>
+
 
 </div>
 

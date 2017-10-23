@@ -188,10 +188,16 @@ hr {
     margin-top: 25px;
 }
 
-.diagonal-background {
+/*.diagonal-background {
+
+  background-image: url('http://localhost:84/RC/wp-content/uploads/2017/10/slider2.png'), url('http://localhost:84/RC/wp-content/uploads/2017/10/slider.png');
+  background-position: left right, left right;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 850px 850px;
   /*background-color: #ff0;*/
     /*background-image: -webkit-linear-gradient(50deg, #ffccff 50%, #f3bce1 50%);*/
-    /*background: linear-gradient(50deg, rgba(255, 204, 255, 1) 50%, rgba(243, 188, 225, 1) 50%);*/
+    /*background: linear-gradient(50deg, rgba(255, 204, 255, 1) 50%, rgba(243, 188, 225, 1) 50%);
 
   /*  background: 
         linear-gradient(to top left,
@@ -201,13 +207,13 @@ hr {
           rgba(0,0,0,0) 100%
           );
 
-    -webkit-transition: background-image 2s;
-  -moz-transition: background-image 2s;
-  -o-transition: background-image 2s;
-  transition: background-image 2s;*/
-}
+  -webkit-transition: background-image 2s;
+ // -moz-transition: background-image 2s;
+ // -o-transition: background-image 2s;
+ // transition: background-image 2s;*/
 
-.diagonal-background-hover {
+
+/*.diagonal-background-hover {
   background-color: #fff;
   background:linear-gradient(50deg, rgba(255, 204, 255, 1) 80%, rgba(243, 188, 225, 1) 20%);
 
@@ -217,6 +223,6 @@ hr {
 .diagonal-background-rev{
   background-color: #fff;
      background-image: -webkit-linear-gradient(50deg, #f3bce1 50%, #ffccff 50%);
-}
+}*/
 
 
