@@ -8,7 +8,7 @@
 		color: #fff;
 		h1{
 		color: #fff;
-		font-size: $font-size-h1;
+		font-size: $font-size-h2;
 
 
 		}
@@ -22,7 +22,7 @@
 
 
 			.number{
-				@extend .number;
+				@extend .number-syle;
 			}
 
 			.scope{
@@ -51,7 +51,7 @@
 
 
 			.number{
-				@extend .number;
+				@extend .number-syle;
 			}
 
 			.scope{
@@ -62,7 +62,7 @@
 				}
 			}
 
-			.fade-1{
+			.fade-2{
 				opacity: 1;
 			}
 
@@ -80,7 +80,7 @@
 
 
 			.number{
-				@extend .number;
+				@extend .number-syle;
 			}
 
 			.scope{
@@ -91,7 +91,7 @@
 				}
 			}
 
-			.fade-1{
+			.fade-3{
 				opacity: 1;
 			}
 
@@ -110,7 +110,7 @@
 
 
 			.number{
-				@extend .number;
+				@extend .number-syle;
 			}
 
 			.scope{
@@ -121,7 +121,7 @@
 				}
 			}
 
-			.fade-1{
+			.fade-4{
 				opacity: 1;
 			}
 
@@ -137,7 +137,7 @@
 		.client-cont5{
 
 			.number{
-				@extend .number;
+				@extend .number-syle;
 			}
 
 			.scope{
@@ -146,10 +146,13 @@
 					@extend .h3-style;
 					font-size: $font-size-h3;
 				}
+
 			}
 
-			.fade-1{
+			.fade-5{
 				opacity: 1;
+
+
 			}
 
 			.side-p5{
