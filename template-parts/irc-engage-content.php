@@ -28,7 +28,7 @@
 	</div>
 
 
-<div class="container">
+<div class="container button-con">
 	<div class="row">
 		<a class="btn profile-button" href="#">SIGN UP</a>
 

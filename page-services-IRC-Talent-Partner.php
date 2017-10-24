@@ -11,7 +11,7 @@
 			<div class="feat-wrap">
 			<?php get_template_part( 'template-parts/_featured_image' ); ?>
 			</div>
-			<div class="home-content">
+			<div class="talent-partner-content">
 				<?php get_template_part( 'template-parts/irc-talent-partner', 'content' ); ?>
 			</div>
 		</main><!-- #main -->
