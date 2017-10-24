@@ -2,11 +2,11 @@
   $list = get_field('list_contents');
   $bg_color = get_field('background_color');
 ?>
-<div class="wrapper profile-wrapper colours <?= $bg_color ?>">
+<div class="wrapper services-child colours <?= $bg_color ?>">
 	<div class="row">
   	<div class="col-md-12 profile-con">
       <?php if($list) : ?>
-      <ul class="profile-list">
+      <ul class="service-list">
         <?php foreach ($list as $key => $value) { ?>
           <li><i class="fa fa-check" aria-hidden="true"></i> <?= $value['content'] ?></li>
         <?php } ?>

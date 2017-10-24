@@ -1,11 +1,11 @@
 .services-content{
 	text-align: center;
 
-	
+
 	.service-wrapper{
 		text-align: center;
 		color: #fff;
-		
+
 
 		h2{
 			color: #fff;
@@ -15,20 +15,20 @@
 		.irc-col1{
 			height: 800px;
 			.col-md-12{
-				
+
 				.irc-profile {
 					list-style: none;
 					text-align: left;
 				}
 
-			
+
 			}
 
 			.info-links{
-				
+
 				a{
 					@extend .service-button;
-					
+
 				}
 
 			}
@@ -38,7 +38,7 @@
 			height: 800px;
 
 			.col-md-12{
-				
+
 				.irc-profile {
 					list-style: none;
 					text-align: left;
@@ -47,11 +47,11 @@
 			}
 
 			.info-links{
-				
-				
+
+
 				a{
 					@extend .service-button;
-					
+
 				}
 
 			}
@@ -61,7 +61,7 @@
 			height: 800px;
 
 			.col-md-12{
-				
+
 				.irc-profile {
 					list-style: none;
 					text-align: left;
@@ -70,7 +70,7 @@
 			}
 
 			.info-links{
-				
+
 				a{
 					@extend .service-button;
 				}
@@ -82,7 +82,7 @@
 			height: 800px;
 
 			.col-md-12{
-				
+
 				.irc-profile {
 					list-style: none;
 					text-align: left;
@@ -91,10 +91,10 @@
 			}
 
 			.info-links{
-				
+
 				a{
 					@extend .service-button;
-					
+
 				}
 
 			}
@@ -122,4 +122,17 @@
 
 }
 
-
+.services-child{
+	padding : 30px 15px;
+	.service-list{
+		display: flex;
+    flex-wrap: wrap;
+		margin-bottom : 0;
+		li{
+			list-style: none;
+			width: 50%;
+			display: inline;
+			color: #fff;
+		}
+	}
+}
