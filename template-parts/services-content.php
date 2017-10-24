@@ -1,5 +1,5 @@
 <div class="wrapper service-wrapper">
-	<div class="col-md-3 col-sm-6 col-xs-12 irc-col1 colours yellow-green">
+	<div class="col-md-3 irc-col1 colours yellow-green">
 		<h2>IRC Profile</h2>
 		<p>Best for easier fit roles</p>
 
@@ -15,12 +15,12 @@
 		</div>
 
 		<div class="info-links">
-			<a class="btn" href="../irc-profile/">SIGN UP</a>
+			<a class="btn" href="#">SIGN UP</a>
 			<a class="btn" href="../irc-profile/">FIND OUT MORE</a>
 		</div>
 	</div>
 
-	<div class="col-md-3 col-sm-6 col-xs-12 irc-col2 colours brown-green">
+	<div class="col-md-3 irc-col2 colours brown-green">
 		<h2>IRC Discover</h2>
 		<p>For when you need to look a little further</p>
 
@@ -38,11 +38,11 @@
 
 		<div class="info-links">
 			<a class="btn" href="#">SIGN UP</a>
-			<a class="btn" href="#">FIND OUT MORE</a>
+			<a class="btn" href="../irc-discover/">FIND OUT MORE</a>
 		</div>
 	</div>
 
-	<div class="col-md-3 col-sm-6 col-xs-12 irc-col3 colours green">
+	<div class="col-md-3 irc-col3 colours green">
 		<h2>IRC Engage</h2>
 		<p>Great for mission-critical or hard to fill roles.</p>
 
@@ -61,12 +61,12 @@
 
 		<div class="info-links">
 			<a class="btn" href="#">SIGN UP</a>
-			<a class="btn" href="#">FIND OUT MORE</a>
+			<a class="btn" href="../irc-engage/">FIND OUT MORE</a>
 		</div>
 
 	</div>
 
-	<div class="col-md-3 col-sm-6 col-xs-12 irc-col4 colours avocado-green">
+	<div class="col-md-3 irc-col4 colours avocado-green">
 		<h2>IRC Talent Partner</h2>
 		<p>A truly comprehensive service.</p>
 
@@ -83,7 +83,7 @@
 
 		<div class="info-links">
 			<a class="btn" href="#">SIGN UP</a>
-			<a class="btn" href="#">FIND OUT MORE</a>
+			<a class="btn" href="../irc-talent-partner/">FIND OUT MORE</a>
 		</div>
 	</div>
 

@@ -23,9 +23,9 @@
 		<a class="btn profile-button" href="#">SIGN UP</a>
 
 		<div class="col-md-12 button-list">
-			<a class="btn profile-button" href="">IRC DISCOVER</a>
-			<a class="btn profile-button" href="">IRC ENGAGE</a>
-			<a class="btn profile-button" href="">IRC PARTNER</a>
+			<a class="btn profile-button" href="../irc-discover/">IRC DISCOVER</a>
+			<a class="btn profile-button" href="../irc-engage/">IRC ENGAGE</a>
+			<a class="btn profile-button" href="../irc-talent-partner/">IRC PARTNER</a>
 		</div>
 	</div>
 </div>
