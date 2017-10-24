@@ -1,0 +1,43 @@
+.candidates-con{
+	padding-bottom: 40px;
+	
+	.container{
+		padding: 0px;
+		a{
+		width: 293px;
+		float: right;
+		color: #47a3dc;
+		border-color: #47a3dc;
+		}
+
+		h2{
+		color: #47a3dc;
+		font-weight: bold;
+		}
+	.candidate-p{
+		padding-top: 35px;
+	}
+  }	
+}
+
+
+
+
+.candidates-wrapper{
+
+	.candidates-con6{
+		padding-left: 0px;	
+
+		h5{
+		color: #fff;
+		font-size: $font-size-h5;
+		font-weight: bold;
+		}
+		a{
+			margin-top: 25px;
+			float: right;
+			width: 293px;
+			bottom: 3px;
+		}
+	}	
+}
