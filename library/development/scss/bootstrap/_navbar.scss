@@ -233,11 +233,18 @@
 .navbar-nav {
   margin: ($navbar-padding-vertical / 2) (-$navbar-padding-horizontal);
   background: #fff;
-  > li > a {
-    padding-top:    10px;
-    padding-bottom: 10px;
-    line-height: $line-height-computed;
-    color : $gray;
+  > li {
+    & > a {
+      padding-top:    10px;
+      padding-bottom: 10px;
+      line-height: $line-height-computed;
+      color : $gray;
+    }
+    &.current-menu-item{
+      a{
+        color: $brand-primary;
+      }
+    }
   }
 
   @media (max-width: $grid-float-breakpoint-max) {
@@ -563,6 +570,13 @@
       &:focus {
         color: $navbar-inverse-link-active-color;
         background-color: $navbar-inverse-link-active-bg;
+      }
+    }
+    > .current-menu-item > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $brand-primary;
       }
     }
     > .disabled > a {

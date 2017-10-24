@@ -45,6 +45,11 @@
 						color : $brand-primary;
 					}
 				}
+				&.current-menu-item{
+		      a{
+		        color: $brand-primary;
+		      }
+		    }
 			}
 		}
 		&.collapse{
