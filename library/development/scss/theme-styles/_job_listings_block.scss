@@ -1,0 +1,67 @@
+.job_listings{
+  .job_filters{
+    background: transparent;
+    .search_jobs{
+      background : $brand-primary;
+      padding : 50px 40px;
+      input{
+        padding : 4px 15px;
+      }
+    }
+    .job_types{
+      background: transparent;
+      padding-top : 40px;
+      padding-bottom : 40px;
+      text-align: center;
+      li{
+        border-right: 0px;
+        float : none;
+        display: inline-block;
+        padding-top : 0px;
+        padding-bottom : 0px;
+        label{
+          font-size: 12pt;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .job_listings{
+    border-top: 2px solid #3f3f3f;
+
+    .job_listing{
+      border-bottom: 2px solid #3f3f3f;
+
+      .position{
+        h3{
+          @extend .h5;
+          margin-bottom: 0;
+        }
+        .company{
+          strong{
+            color : $gray;
+            text-transform: capitalize;
+          }
+          .tagline{
+            display: block;
+            font-size: 12pt;
+            color : $gray;
+          }
+        }
+      }
+      .location{
+        @extend .h6;
+        color : $gray;
+      }
+      .meta{
+        .job-type{
+          // font-size: 11pt;
+        }
+        .date{
+          font-size: 10pt;
+          color : $gray;
+        }
+      }
+    }
+  }
+}
