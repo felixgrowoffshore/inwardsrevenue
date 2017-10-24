@@ -1,6 +1,7 @@
 <?php
 	$client_contents = get_field('page_contents');
 	$find_more = get_field('find_out_more');
+	if($client_contents ) :
 	foreach ($client_contents as $key => $client_content) {
 		?>
 		<div class="client-con <?= $client_content['background_color'] ?> colours">
@@ -18,7 +19,8 @@
 			</div>
 		</div>
 		<?php
-	}
+	} endif;
+	if($find_more ) :
 	foreach ($find_more as $key => $more) { ?>
 		<div class="wrapper wrapper-6 <?= $more['background_color'] ?> colours">
 			<div class="container client-con6">
@@ -28,4 +30,4 @@
 				</div>
 			</div>
 		</div>
-	<?php } ?>
+	<?php } endif; ?>
