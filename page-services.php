@@ -11,7 +11,7 @@
 			<div class="home-feat-wrap">
 			<?php get_template_part( 'template-parts/_featured_image' ); ?>
 			</div>
-			<div class="home-content">
+			<div class="services-content">
 				<?php get_template_part( 'template-parts/services', 'content' ); ?>
 			</div>
 		</main><!-- #main -->
