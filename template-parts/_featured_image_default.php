@@ -7,6 +7,7 @@
     <?php
     $colour = get_field('colour');
     // $rgb = hex2rgba($colour,0.7);
+    // TO SHOW THE PAGE CONTENTS
     $desc = '';
     while ( have_posts() ) : the_post();
      if( '' !== get_post()->post_content ) :
@@ -27,7 +28,6 @@
         <?= $description ?>
       </div>
     </div>
-    <p class="btn-next"><a class="next-block" href="#next-block"><i class="fa fa-long-arrow-down"></i></a></p>
   </div>
   <div id="next-block"></div>
 <?php endif; ?>
