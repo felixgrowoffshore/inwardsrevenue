@@ -110,6 +110,37 @@ jQuery(document).ready(function($){
 
   });
 
+  // check num1 and num2
+
+  if(a && b){
+    $(".num1").text(a);
+    $(".num2").text(b);
+
+    var ans_c = a + b;
+
+    // console.log(ans_c);
+    $("#IRC-from form").submit(function(){
+      var ans = $(".answer").val();
+      var flag = true;
+      if(ans_c != ans) flag = false;
+      if(!flag) $(".wpcf7-validation-errors").append("Incorrect captcha");
+
+      return flag;
+    });
+
+    $(".btn-submit").click(function(){
+      var ans = $(".answer").val();
+      var flag = true;
+      if(ans_c != ans) flag = false;
+
+      if(flag){
+        $("#IRC-from form").trigger("submit");
+      } else {
+        $(".wpcf7-response-output").addClass("wpcf7-validation-errors").removeClass("wpcf7-mail-sent-ok wpcf7-display-none").html("Incorrect captcha");
+      }
+      // return flag;
+    });
+  }
 
   function clients_animate(){
     $(".client-con").addClass('fade-away');

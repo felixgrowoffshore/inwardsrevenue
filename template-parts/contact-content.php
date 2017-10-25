@@ -25,10 +25,22 @@
 				<a class="colours red" href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 			</div>
 		</div>
+<<<<<<< HEAD
 		<div class="col-md-6 colours red contact">
 			<?php echo do_shortcode ('[contact-form-7 id="299" title="Contact"]'); ?>
+=======
+		<div id="IRC-from" class="col-md-6 colours red contact">
+			<?php echo do_shortcode('[contact-form-7 id="162" title="IRC FORM"]'); ?>
+>>>>>>> dd6a452cb12e60fc8040b0b9b1292efceec618b5
 		</div>
 	</div>
-
+	<?php
+		$num1 = rand(1, 10);
+		$num2 = rand(1, 10);
+	?>
+	<script>
+	var a = <?=$num1?>;
+	var b = <?=$num2?>;
+	</script>
 </div>
 </div>
