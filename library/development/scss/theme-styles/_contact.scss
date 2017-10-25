@@ -1,9 +1,40 @@
-.contact-content{
+.contact-wrap{
+	text-align: center;
+}
 
+.contact-content{
+	text-align: center;
 	.container{
 		.row{
 			margin-top: 40px;
 			margin-bottom: 40px;
+
+			.contact-col{
+				text-align: left;
+				position: relative;
+   				bottom: 40px;
+
+   				p{
+   					font-size: 16px;
+   				}
+   				.contact-info{
+   					border-bottom: solid 1px #000;
+   					margin-top: 20px;
+   				}
+
+   				.social{
+   					margin-top: 20px;
+   					a{	
+   						background-color: #a81a08 !important;
+   						margin-right: 10px;
+   						i{
+   							width: 40px;
+						    text-align: center;
+						    color: #fff;
+   						}
+   					}
+   				}
+			}
 			.contact{
 				padding: 20px;
 				text-align: center;
@@ -14,6 +45,11 @@
 					width: 100%;
 					margin-bottom: 30px;
 					padding: 5px;
+					color: #000;
+				}
+				#message{
+					padding-bottom: 100px;
+					
 				}
 
 			}
