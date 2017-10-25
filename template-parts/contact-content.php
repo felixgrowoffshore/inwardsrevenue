@@ -24,18 +24,17 @@
 				<a class="colours red" href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 			</div>
 		</div>
-		<div class="col-md-6 colours red contact">
-			<form>
-			   <p>Complete the form below to get in touch.</p>
-			    <input type="input"  id="name" placeholder="NAME">
-			    <input type="input"  id="company" placeholder="COMPANY">
-			    <input type="input"  id="telephone" placeholder="TELEPHONE">
-			    <input type="input"  id="email" placeholder="EMAIL ADDRESS">
-			    <input type="input"  id="message" placeholder="MESSAGE">
-			 	<button class="btn" type="button">SEND</button>
-			</form>
+		<div id="IRC-from" class="col-md-6 colours red contact">
+			<?php echo do_shortcode('[contact-form-7 id="162" title="IRC FORM"]'); ?>
 		</div>
 	</div>
-
+	<?php
+		$num1 = rand(1, 10);
+		$num2 = rand(1, 10);
+	?>
+	<script>
+	var a = <?=$num1?>;
+	var b = <?=$num2?>;
+	</script>
 </div>
 </div>

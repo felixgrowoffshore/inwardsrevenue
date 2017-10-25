@@ -110,6 +110,23 @@ jQuery(document).ready(function($){
 
   });
 
+  // check num1 and num2
+
+  if(a && b){
+    $(".num1").text(a);
+    $(".num2").text(b);
+
+    var ans_c = a + b;
+    // console.log(ans_c);
+    $("#IRC-from").submit(function(){
+      var ans = $(".answer").val();
+      var flag = true;
+      if(ans_c != ans) flag = false;
+      if(!flag) $(".wpcf7-validation-errors").append("Incorrect captcha");
+
+      return flag;
+    });
+  }
 
   function clients_animate(){
     $(".client-con").addClass('fade-away');
