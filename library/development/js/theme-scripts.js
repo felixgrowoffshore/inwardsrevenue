@@ -112,7 +112,7 @@ jQuery(document).ready(function($){
 
   // check num1 and num2
 
-  if(a && b){
+  if(a != '' && b != ''){
     $(".num1").text(a);
     $(".num2").text(b);
 
