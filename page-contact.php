@@ -8,7 +8,7 @@
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-			<div class="feat-wrap">
+			<div class="contact-wrap">
 				<?php get_template_part( 'template-parts/_featured_image_default' ); ?>
 			</div>
 			<div class="contact-content">
