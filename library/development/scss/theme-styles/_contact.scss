@@ -16,6 +16,10 @@
 
    				p{
    					font-size: 16px;
+   					span{
+   						color: #a81a08;
+   						font-weight: bold;
+   					}
    				}
    				.contact-info{
    					border-bottom: solid 1px #000;
@@ -23,13 +27,19 @@
    					h3{
    						font-weight: bold;
    					}
+
    				}
 
    				.social{
-   					margin-top: 20px;
+   					bottom: 20px;
+   					position: relative;
+   					h3{
+   						font-weight: bold;
+   					}
    					a{	
    						background-color: #a81a08 !important;
    						margin-right: 10px;
+   						padding: 5px;
    						i{
    							width: 40px;
 						    text-align: center;
@@ -44,17 +54,21 @@
 				background-color: #a81a08;
 				color: #fff;
 
-				input{
+				textarea{
 					width: 100%;
-					margin-bottom: 30px;
-					padding: 5px;
-					color: #000;
-				}
-				#message{
-					padding-bottom: 100px;
-					
+				}	
+				input{
+					color: #666666;
+					width: 100%;
 				}
 
+				.answer{
+					width: 58px;
+				}
+
+				.btn-submit{
+					width: 120px;
+				}
 			}
 		}
 	}
