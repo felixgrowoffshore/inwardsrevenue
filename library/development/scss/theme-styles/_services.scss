@@ -10,22 +10,21 @@
 		h2{
 			color: #fff;
 			font-weight: bold;
+			margin-top: 50px;
 		}
 
-		.irc-col1{
-			height: 800px;
-			.col-md-12{
-
-				.irc-profile {
+		.irc-col{
+			// height: 800px;
+			.irc-profile {
+				li{
 					list-style: none;
 					text-align: left;
 				}
 
-
 			}
 
-			.info-links{
-
+			.service-links{
+				margin: auto auto 0 auto;
 				a{
 					@extend .service-button;
 
@@ -34,94 +33,35 @@
 			}
 		}
 
-		.irc-col2{
-			height: 800px;
-
-			.col-md-12{
-
-				.irc-profile {
-					list-style: none;
-					text-align: left;
-				}
-
-			}
-
-			.info-links{
 
 
-				a{
-					@extend .service-button;
-
-				}
-
-			}
-		}
-
-		.irc-col3{
-			height: 800px;
-
-			.col-md-12{
-
-				.irc-profile {
-					list-style: none;
-					text-align: left;
-				}
-
-			}
-
-			.info-links{
-
-				a{
-					@extend .service-button;
-				}
-
-			}
-		}
-
-		.irc-col4{
-			height: 800px;
-
-			.col-md-12{
-
-				.irc-profile {
-					list-style: none;
-					text-align: left;
-				}
-
-			}
-
-			.info-links{
-
-				a{
-					@extend .service-button;
-
-				}
-
-			}
-		}
 
 		.info-row{
+			h2{
+				text-align: left;
+				color: #fff;
+				padding-left: 50%;
+				font-weight: bold;
+			}
 
-		h2{
-			text-align: left;
-			color: #fff;
-			padding-left: 50%;
-			font-weight: bold;
+			p{
+				padding: 50px;
+				margin-right: 50px;
+				text-align: left;
+			}
 		}
-
-		p{
-			padding: 50px;
-			margin-right: 50px;
-			text-align: left;
-		}
-	}
-
-
 	}
 
 
 }
-
+.service-flex{
+	display: flex;
+	flex-wrap: wrap;
+	.irc-col{
+		display: flex;
+		flex-direction: column;
+	}
+}
 .services-child{
 	padding : 30px 15px;
 	.service-list{
