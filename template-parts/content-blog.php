@@ -33,13 +33,22 @@
 				<a href="">BY: ANGELA FOSTER | SEPTEMBER 19, 2016</a>
 				<a class="btn col-md-3" href="">READ MORE</a>
 			</div>
+			<div class="text-center paginate">
+			<ul class="pagination">
+			  <li><a href="#"><</a></li>
+			  <li><a href="#">1</a></li>
+			  <li><a href="#">2</a></li>
+			  <li><a href="#">3</a></li>
+			  <li><a href="#">4</a></li>
+			  <li><a href="#">></a></li>
+			</ul>
 		</div>
+		</div>
+		
 	</div>
 
 	<div class="col-md-3 colours orange">
 	   <?php get_sidebar($date); ?>
-
-
   </div>
 </div>
 </div>
