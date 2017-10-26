@@ -171,6 +171,34 @@ function custom_pagination($numpages = '', $pagerange = '', $paged='') {
   //   echo '</ul>';
 }
 
+function get_authors(){
+	$authors = get_field('authur',get_the_ID());
+	$display = '';
+	// var_dump($authors);
+	foreach ($authors as $key => $author) {
+		$img = get_field('profile_picture','user_'.$author['ID']);
+		$user_position = get_field('user_position','user_'.$author['ID']);
+		$user_contact_number = get_field('user_contact_number','user_'.$author['ID']);
+		$user_linkedin_ = get_field('user_linkedin_','user_'.$author['ID']);
+		// var_dump($author);
+		$display .= '<div class="profile-author clearfix">
+			<div class="col-md-3">
+				<img src="'.$img['url'].'">
+			</div>
+			<div class="col-md-9">
+				<h4>'.$author['display_name'].'</h4>
+				<h6>'.$user_position.'</h6>
+				<p class="description">'.$author['user_description'].'</p>
+				<p>Tel: '.$user_contact_number.'</p>
+				<p>Email: '.$author['user_email'].'</p>
+				<p>Linkedin: '.$user_linkedin_.'</p>
+			</div>
+		</div>';
+	}
+	return $display;
+}
+add_shortcode( 'authors', 'get_authors' );
+
 // constant links
 DEFINE('THEMEPATH', get_template_directory().'/');
 DEFINE('IMAGEPATH', get_template_directory_uri().'/images/');

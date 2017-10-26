@@ -26,7 +26,7 @@
 	?>
 <div id="page" class="site">
 	<div class="header_wrap"><div class="container">
-		<header id="masthead" class="site-header navbar-fixed-top colour-disabled <?=$colour?>">
+		<header id="masthead" class="site-header navbar-fixed-top colour-disabled <?=$colour ? $colour : 'yellow' ?>">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-2 col-sm-2 col-xs-8 logo">

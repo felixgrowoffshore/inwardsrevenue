@@ -8,8 +8,9 @@
  */
 
 ?>
-<div class="row">
-	<div class="col-md-8 col-lg-9">
+
+<div class="row flex-display">
+	<div class="col-md-9 col-lg-9">
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 			<header class="entry-header ">
@@ -20,12 +21,7 @@
 					the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 				endif;
 
-				if ( 'post' === get_post_type() ) : ?>
-				<div class="entry-meta">
-					<?php cap_theme_posted_on(); ?>
-				</div><!-- .entry-meta -->
-				<?php
-				endif; ?>
+				?>
 			</header><!-- .entry-header -->
 
 
@@ -50,13 +46,17 @@
 					) );
 				?>
 			</div><!-- .entry-content -->
-
-			<footer class="entry-footer">
-				<?php cap_theme_entry_footer(); ?>
-			</footer><!-- .entry-footer -->
+			
+			<?php
+			// If comments are open or we have at least one comment, load up the comment template.
+			if ( comments_open() || get_comments_number() ) :
+				comments_template();
+			endif;
+			?>
 		</article><!-- #post-<?php the_ID(); ?> -->
+
 	</div>
-	<div class="col-md-4 col-lg-3">
-		<?php the_post_navigation(); ?>
+	<div class="col-md-3 col-lg-3 colours orange">
+		<?php get_sidebar(); ?>
 	</div>
 </div>

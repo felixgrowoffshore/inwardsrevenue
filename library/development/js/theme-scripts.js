@@ -73,7 +73,6 @@ jQuery(document).ready(function($){
       var scroll_pos_test = element_position - 200;
 
       if(y_scroll_pos > scroll_pos_test) {
-          // console.log('colour-disabled');
           $("#masthead").removeClass('colour-disabled');
       } else {
         $("#masthead").addClass('colour-disabled');
@@ -81,6 +80,9 @@ jQuery(document).ready(function($){
 
       // client on scroll showing of slides
       // console.log("show index" + ndx_show);
+      if(!$(".featured_image").length){
+        alert();
+      }
       if(irc[ndx_show] && flag_scroll){
         flag_scroll = false;
         $(".irc-con .animate-this").prepend(irc[ndx_show].el);

@@ -6,8 +6,6 @@
   <div class="featured_image" style="background-image:url('<?php the_post_thumbnail_url('full'); ?>');">
     <?php
     $colour = get_field('colour');
-    // $rgb = hex2rgba($colour,0.7);
-    // TO SHOW THE PAGE CONTENTS
     $desc = '';
     while ( have_posts() ) : the_post();
      if( '' !== get_post()->post_content ) :
@@ -17,6 +15,9 @@
     $sec_feat = get_field('secondary_featured_image');
     $title = (get_field('title') ? get_field('title') : get_the_title());
     $description = (get_field('description') ? get_field('description') : $desc);
+    if ( is_singular() ) :
+      $description = get_field('sub_heading');
+    endif;
     ?>
 
     <div class="feat-info colours <?=$colour?>">
@@ -29,5 +30,27 @@
       </div>
     </div>
   </div>
-  <div id="next-block"></div>
-<?php endif; ?>
+
+<?php else :
+
+  if ( is_singular() ) :
+    ?>
+    <div class="featured_image">
+      <?php
+      $title = (get_field('title') ? get_field('title') : get_the_title());
+      $description = get_field('sub_heading');
+      ?>
+      <div class="feat-info colours yellow">
+        <div class="title">
+          <h1><?= $title; ?></h1>
+        </div>
+        <div class="desc">
+          <?= $description ?>
+        </div>
+      </div>
+    </div>
+    <?php
+  endif;
+
+endif; ?>
+<div id="next-block"></div>
