@@ -1,6 +1,6 @@
 
 <div class="container-fluid">
-<div class="row">
+<div class="row flex-display">
 	<div class="col-md-9">
 
 		<?php
