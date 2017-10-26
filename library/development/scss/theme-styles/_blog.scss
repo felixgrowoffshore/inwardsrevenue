@@ -58,3 +58,31 @@
 			color: #fff;
 		}
 	}
+
+.paginate{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	.page-numbers{
+		padding : 2px 0px;
+		display: inline-block;
+		background: #ebb600;
+		color : #fff;
+		width:37px;
+		height:37px;
+		&.current{
+			background: #d98300;
+			cursor: not-allowed;
+		}
+
+		&.disabled{
+			margin-right: 7px;
+			a{
+				background: #ebb600;
+				cursor: not-allowed;
+				color: #fff;
+
+				color: #fff;
+			}
+		}
+	}
+}

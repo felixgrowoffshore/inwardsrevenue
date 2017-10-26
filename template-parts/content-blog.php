@@ -8,7 +8,7 @@
 		  $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 		  $query_args = array(
 		    'post_type' => 'post',
-		    'posts_per_page' => 2,
+		    'posts_per_page' => 3,
 		    'paged' => $paged
 		  );
 		  // create a new instance of WP_Query
@@ -34,12 +34,16 @@
 		<?php endwhile; ?>
 
 		<!-- pagination here -->
-    <?php
+		<div class="text-center paginate row">
+			<div class="col-sm-12">
+				<?php
+		      if (function_exists(custom_pagination)) {
+		        custom_pagination($the_query->max_num_pages,"",$paged);
+		      }
+		    ?>
+			</div>
+		</div>
 
-      if (function_exists(custom_pagination)) {
-        custom_pagination($the_query->max_num_pages,"",$paged);
-      }
-    ?>
 
 		<?php else: ?>
 		  <div class="row blog-row colours light-yellow">
@@ -50,16 +54,7 @@
 			</div>
 		<?php endif; ?>
 
-		<div class="text-center paginate">
-			<ul class="pagination">
-				<li><a href="#"><</a></li>
-				<li><a href="#">1</a></li>
-				<li><a href="#">2</a></li>
-				<li><a href="#">3</a></li>
-				<li><a href="#">4</a></li>
-				<li><a href="#">></a></li>
-			</ul>
-		</div>
+
 	</div>
 	<div class="col-md-3 colours orange">
 	   <?php get_sidebar(); ?>

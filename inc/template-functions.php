@@ -115,7 +115,7 @@ function custom_pagination($numpages = '', $pagerange = '', $paged='') {
    * in our theme, and use this function in default quries
    * and custom queries.
    */
-  global $paged;
+  global $paged, $wp_rewrite;
   if (empty($paged)) {
     $paged = 1;
   }
@@ -132,11 +132,11 @@ function custom_pagination($numpages = '', $pagerange = '', $paged='') {
    * function.
    */
   $pagination_args = array(
-    'base'            => get_pagenum_link(1) . '%_%',
+    'base'            => @add_query_arg('page','%#%'),
     'format'          => 'page/%#%',
     'total'           => $numpages,
     'current'         => $paged,
-    'show_all'        => False,
+    'show_all'        => true,
     'end_size'        => 1,
     'mid_size'        => $pagerange,
     'prev_next'       => True,
@@ -148,14 +148,27 @@ function custom_pagination($numpages = '', $pagerange = '', $paged='') {
   );
 
   $paginate_links = paginate_links($pagination_args);
-
-  if ($paginate_links) {
-    echo "<nav class='custom-pagination'>";
-      echo "<span class='page-numbers page-num'>Page " . $paged . " of " . $numpages . "</span> ";
+	//
+  // if ($paginate_links) {
+  //   echo "<nav class='custom-pagination'>";
+  //     echo "<span class='page-numbers page-num'>Page " . $paged . " of " . $numpages . "</span> ";
+			if ( $paged == 1) echo '<span class="page-numbers disabled"><a href="#" class="disabled">'.$pagination_args['prev_text'].'</a></span>';
       echo $paginate_links;
-    echo "</nav>";
-  }
-
+  //   echo "</nav>";
+  // }
+	// if ( $wp_rewrite->using_permalinks() )
+  //           $pagination_args['base'] = user_trailingslashit( trailingslashit( remove_query_arg( 's', get_pagenum_link( 1 ) ) ) . 'page/%#%/', 'paged' );
+  //   if ( !empty( $wp_query->query_vars['s'] ) )
+  //           $pagination_args['add_args'] = array( 's' => get_query_var( 's' ) );
+  //   $pages = paginate_links( $pagination_args );
+	// 	var_dump($pages);
+  //   echo '<ul>';
+  //   if ( $paged == 1) echo '<li><a href="#" class="disabled">&laquo;</a></li>';
+  //   foreach ($pages as $page) :
+  //       echo '<li>'.$page.'</li>';
+  //   endforeach;
+  //   if ( $paged == $wp_query->max_num_pages ) echo '<li><a href="#" class="disabled">&raquo;</a></li>';
+  //   echo '</ul>';
 }
 
 // constant links
