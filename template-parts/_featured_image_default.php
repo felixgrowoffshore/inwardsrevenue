@@ -39,8 +39,12 @@
       <?php
       $title = (get_field('title') ? get_field('title') : get_the_title());
       $description = get_field('sub_heading');
+      $colour = get_field('colour');
+      if(!$colour){
+        $colour = 'yellow';
+      }
       ?>
-      <div class="feat-info colours yellow">
+      <div class="feat-info colours <?= $colour ?>">
         <div class="title">
           <h1><?= $title; ?></h1>
         </div>
