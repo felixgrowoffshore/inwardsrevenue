@@ -16,9 +16,14 @@
 		.irc-col{
 			// height: 800px;
 			.irc-profile {
+				padding: 0;
 				li{
 					list-style: none;
 					text-align: left;
+					display: flex;
+					.fa{
+						padding-right : 10px;
+					}
 				}
 
 			}
@@ -73,6 +78,7 @@
 			width: 50%;
 			display: inline;
 			color: #fff;
+			text-align: left;
 		}
 	}
 }

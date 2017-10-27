@@ -10,13 +10,13 @@
 ?>
 
 <div class="row flex-display">
-	<div class="col-md-9 col-lg-9">
+	<div class="col-md-12">
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 			<div class="entry-content">
 				<?php
 					the_content();
-					
+
 					wp_link_pages( array(
 						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'cap-theme' ),
 						'after'  => '</div>',
@@ -32,8 +32,5 @@
 			?>
 		</article><!-- #post-<?php the_ID(); ?> -->
 
-	</div>
-	<div class="col-md-3 col-lg-3">
-		<?php //get_sidebar(); ?>
 	</div>
 </div>

@@ -16,7 +16,7 @@
     $title = (get_field('title') ? get_field('title') : get_the_title());
     $description = (get_field('description') ? get_field('description') : $desc);
     if ( is_singular() ) :
-      $description = get_field('sub_heading');
+      $description = (get_field('sub_heading',get_the_ID()) ? get_field('sub_heading',get_the_ID()) : $description);
     endif;
     ?>
 
@@ -26,7 +26,7 @@
         <h1><?= $title; ?></h1>
       </div>
       <div class="desc">
-        <?= $description ?>
+        <?= $description; ?>
       </div>
     </div>
   </div>
