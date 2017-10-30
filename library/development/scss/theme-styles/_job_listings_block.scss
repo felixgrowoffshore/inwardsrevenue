@@ -110,6 +110,7 @@
 
       .company_logo{
         margin: 0;
+        max-width: 150px;
         @media (max-width: $screen-sm-max) {
           margin: 0 auto;
         }
