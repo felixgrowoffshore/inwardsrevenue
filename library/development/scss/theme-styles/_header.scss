@@ -115,6 +115,7 @@
 		max-height : max-content;
 		min-height : 40vh;
 		height : auto;
+		background-position: right;
 	}
 	img{
 		object-fit: cover;
@@ -182,4 +183,12 @@
 
 body{
 	overflow-x: hidden;
+}
+
+.navbar-toggle {
+	.icon-bar{
+		@media (max-width: $screen-sm-max) {
+			background: #fff;
+		}
+	}
 }

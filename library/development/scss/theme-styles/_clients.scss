@@ -32,6 +32,10 @@
 		transition: right 1s ease-in-out;
 		-moz-transition: right 1s ease-in-out;
 		-webkit-transition: right 1s ease-in-out;
+		@media (max-width: $screen-sm-min) {
+			padding-top:15px;
+			padding-bottom:15px;
+		}
 	}
 	&.fade-away{
 		// opacity: 0;
@@ -40,27 +44,39 @@
 		// -webkit-transition: opacity 1s ease-in-out;
 		.client-fade{
 
-			 opacity: 0;
-			 transition: opacity 1s ease-in-out;
-		   -moz-transition: opacity 1s ease-in-out;
-		   -webkit-transition: opacity 1s ease-in-out;
+			//  opacity: 0;
+			//  transition: opacity 1s ease-in-out;
+		  //  -moz-transition: opacity 1s ease-in-out;
+		  //  -webkit-transition: opacity 1s ease-in-out;
+			@media (min-width: $screen-sm-min) {
+				opacity: 0;
+				transition: opacity .25s ease-in-out;
+				-moz-transition: opacity .25s ease-in-out;
+				-webkit-transition: opacity .25s ease-in-out;
+			}
 
-			opacity: 0;
-			transition: opacity .25s ease-in-out;
-		  -moz-transition: opacity .25s ease-in-out;
-		  -webkit-transition: opacity .25s ease-in-out;
 
 		}
 		.slide-right{
-			right: -1000px;
-			transition: right 1s ease-in-out;
-			position: absolute;
+			// right: -1500px;
+			// transition: right 1s ease-in-out;
+			// position: absolute;
+			@media (min-width: $screen-sm-min) {
+				right: -1500px;
+				transition: right 1s ease-in-out;
+				position: absolute;
+			}
 		}
 	}
 }
 
 
 .wrapper-6{
+	.client-row6{
+		@media (max-width: $screen-sm-min) {
+			padding : 0 15px 15px;
+		}
+	}
 	a{
 		margin-top: 25px;
 		float: right;

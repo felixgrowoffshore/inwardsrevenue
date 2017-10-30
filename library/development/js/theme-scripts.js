@@ -24,7 +24,7 @@ jQuery(document).ready(function($){
       top: $this.offset().top
     };
   }).get();
-  var ndx_show = irc.length-1;
+  var ndx_show = 0;
   $(".irc-con .animate-this .wrapper").remove();
   // Set document scrolling event handler
   $(document).on("scroll", function() {
@@ -81,12 +81,12 @@ jQuery(document).ready(function($){
       // client on scroll showing of slides
       // console.log("show index" + ndx_show);
       if(!$(".featured_image").length){
-        alert();
+        // alert();
       }
       if(irc[ndx_show] && flag_scroll){
         flag_scroll = false;
-        $(".irc-con .animate-this").prepend(irc[ndx_show].el);
-        var current = $(".irc-con .animate-this > div:first-child");
+        $(".irc-con .animate-this").append(irc[ndx_show].el);
+        var current = $(".irc-con .animate-this > div:last-child");
         // console.log(current);
         // current.css("background","red");
         var counter = 0;
@@ -107,14 +107,15 @@ jQuery(document).ready(function($){
           }
         }, 10);
 
-        ndx_show--;
+        ndx_show++;
       }
 
   });
 
   // check num1 and num2
-
-  if(a != '' && b != ''){
+  var exists_form = false;
+  try { a; b; exists_form = true;} catch(e) {}
+  if(exists_form){
     $(".num1").text(a);
     $(".num2").text(b);
 

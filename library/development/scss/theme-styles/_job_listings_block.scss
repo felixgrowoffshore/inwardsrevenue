@@ -7,6 +7,18 @@
       input{
         padding : 4px 15px;
       }
+      .filter_by_tag{
+        color: #fff;
+        padding-top : 30px;
+        // font-size: 12pt;
+        a{
+          color: #fff;
+          border: 1px solid #fff;
+          // font-size: 12pt !important;
+          padding: 8px 15px;
+          margin-left: 10px;
+        }
+      }
     }
     .job_types{
       background: transparent;
@@ -20,11 +32,12 @@
         padding-top : 0px;
         padding-bottom : 0px;
         label{
-          font-size: 12pt;
+          // font-size: 12pt;
           cursor: pointer;
         }
       }
     }
+
   }
   .job_listings{
     border-top: 2px solid #3f3f3f;
@@ -62,6 +75,7 @@
           color : $gray;
         }
       }
+
     }
   }
 }

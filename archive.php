@@ -11,7 +11,13 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-
+			<div class="feat-wrap">
+				<?php get_template_part( 'template-parts/_featured_image_archive' ); ?>
+			</div>
+			<div class="single-job-listing">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
 		<?php
 		if ( have_posts() ) : ?>
 
@@ -42,7 +48,10 @@ get_header(); ?>
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
-
+						</div>
+					</div>
+				</div>
+			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
