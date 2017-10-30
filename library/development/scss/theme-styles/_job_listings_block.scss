@@ -74,12 +74,17 @@
             font-size: 12pt;
             color : $gray;
           }
+          p{
+            font-size: 14pt;
+          }
         }
       }
       .location{
         @extend .h6;
         color : $gray;
         font-weight: 200;
+        font-size: 14pt;
+
       }
       .meta{
         padding: 0;
@@ -98,6 +103,8 @@
           color: #333;
           border: 2px solid $gray;
           padding : 10px 30px;
+          font-size: 14pt;
+
         }
       }
 

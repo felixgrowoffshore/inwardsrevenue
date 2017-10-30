@@ -23,8 +23,10 @@ global $post;
 		<div class="position">
 			<h3><?php wpjm_the_job_title(); ?></h3>
 			<div class="company">
-				<?php the_company_name( '<strong>', '</strong> ' ); ?>
-				<?php the_company_tagline( '<span class="tagline">', '</span>' ); ?>
+        <?php
+        $desc = get_field('job_short_description');
+        echo $desc;
+        ?>
 			</div>
 		</div>
 		<div class="location">
