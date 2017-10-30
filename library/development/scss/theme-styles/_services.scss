@@ -15,8 +15,17 @@
 
 		.irc-col{
 			// height: 800px;
+			padding-bottom : 20px;
+
+			.service-desc{
+				p{
+					font-size: 14pt;
+					font-weight: 200;
+				}
+			}
+
 			.irc-profile {
-				padding: 0;
+				padding: 0 20px;
 				li{
 					list-style: none;
 					text-align: left;

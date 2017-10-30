@@ -12,7 +12,7 @@
 			<?php get_template_part( 'template-parts/_featured_image_default' ); ?>
 			</div>
 			<div class="services-content">
-				<?php get_template_part( 'template-parts/services', 'content' ); ?>
+				<?php get_template_part( 'template-parts/services', 'content-static' ); ?>
 			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
