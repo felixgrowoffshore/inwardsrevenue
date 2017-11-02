@@ -1,0 +1,35 @@
+.widget-area{
+  padding-top : 25pt;
+  .widget_search{
+    label{
+      span{
+        display: none;
+      }
+    }
+    input{
+      border: 0;
+      padding : 5px 10px;
+      font-size: 14pt;
+      font-weight: 400;
+      color: #000;
+    }
+    .search-submit{
+      display: none;
+    }
+  }
+
+  .widget{
+    h2{
+      font-size: 18pt;
+    }
+    ul{
+      li{
+        a{
+          font-size: 15pt;
+        }
+      }
+    }
+  }
+
+
+}

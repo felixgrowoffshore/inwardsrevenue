@@ -3,6 +3,7 @@
   $bg_color = get_field('background_color');
 ?>
 <div class="wrapper services-child colours <?= $bg_color ?>">
+  <div class="container">
 	<div class="row">
   	<div class="col-md-12 profile-con">
       <?php if($list) : ?>
@@ -13,6 +14,7 @@
       </ul>
       <?php endif; ?>
   	</div>
+  </div>
 	</div>
 
 

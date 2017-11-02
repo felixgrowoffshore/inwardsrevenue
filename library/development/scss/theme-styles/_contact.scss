@@ -7,7 +7,7 @@
 	.container{
 		.row{
 			margin-top: 40px;
-			margin-bottom: 25px;
+			margin-bottom: 40px;
 
 			.contact-col{
 				text-align: left;
@@ -16,10 +16,6 @@
 
    				p{
    					font-size: 16px;
-   					span{
-   						color: #a81a08;
-   						font-weight: bold;
-   					}
    				}
    				.contact-info{
    					border-bottom: solid 1px #000;
@@ -27,25 +23,17 @@
    					h3{
    						font-weight: bold;
    					}
-
+						span{
+							color: #ce323b;
+    					padding-right: 5px;
+						}
    				}
-   				
+
    				.social{
-
-
-   					bottom: 20px;
-   					position: relative;
-
-   					h3{
-   						font-weight: bold;
-   					}
-   					a{	
-
    					margin-top: 20px;
    					a{
    						background-color: #a81a08 !important;
    						margin-right: 10px;
-   						padding: 5px;
    						i{
    							width: 40px;
 						    text-align: center;
@@ -60,24 +48,12 @@
 				background-color: #a81a08;
 				color: #fff;
 
-<<<<<<< HEAD
-				textarea{
-					width: 100%;
-					color: #666666; 
-				}	
-				input{
-					color: #666666;
-=======
 				input, textarea{
->>>>>>> dd6a452cb12e60fc8040b0b9b1292efceec618b5
 					width: 100%;
+					margin-bottom: 30px;
+					padding: 5px;
+					color: #000;
 				}
-<<<<<<< HEAD
-
-				.answer{
-					width: 58px;
-					text-align: center;
-=======
 				#message{
 					padding-bottom: 100px;
 
@@ -89,13 +65,8 @@
 						display: inline;
 						text-align: center;
 					}
->>>>>>> dd6a452cb12e60fc8040b0b9b1292efceec618b5
 				}
 
-				.btn-submit{
-					width: 120px;
-					color: #fff;
-				}
 			}
 		}
 	}

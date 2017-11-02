@@ -71,6 +71,7 @@
 @import "theme-styles/header";
 // footer styles
 @import "theme-styles/footer";
+@import "theme-styles/widget-area";
 
 //Home Page
 @import "theme-styles/front_page";
@@ -96,3 +97,5 @@
 
 //BLOG Page
 @import "theme-styles/blog";
+@import "theme-styles/single-blog";
+@import "theme-styles/single-job-listing";

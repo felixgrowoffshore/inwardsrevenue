@@ -1,0 +1,31 @@
+.single-blog{
+  .flex-display{
+    display: flex;
+		flex-wrap: wrap;
+  }
+
+  article{
+    padding-left: 50px;
+    padding-right: 25px;
+  }
+}
+
+.profile-author{
+  padding : 40px 20px;
+  color : #fff;
+  background: #ebb600;
+  h4,h6{
+    color : #fff;
+    margin-top: 0;
+    text-transform: capitalize;
+  }
+  h4{
+    margin-bottom: 0;
+  }
+  p{
+    margin-bottom: 0;
+    &.description{
+      margin-bottom : 10px;
+    }
+  }
+}

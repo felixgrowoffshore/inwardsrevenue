@@ -18,7 +18,7 @@
 	</div>
 </div>
 <div class="second-content">
-	<div class="row">
+	<div class="clearfix">
 		<div class="col-md-6 col-sm-6 col-xs-12 first-col">
 			<h2>CLIENTS</h2>
 			<p>Matching talented individuals with talent companies takes work. Our proven process makes that work go away.</p>

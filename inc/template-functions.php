@@ -100,7 +100,104 @@ function hex2rgba($color, $opacity = false) {
         //Return rgb(a) color string
         return $output;
 }
+function custom_pagination($numpages = '', $pagerange = '', $paged='') {
 
+  if (empty($pagerange)) {
+    $pagerange = 2;
+  }
+
+  /**
+   * This first part of our function is a fallback
+   * for custom pagination inside a regular loop that
+   * uses the global $paged and global $wp_query variables.
+   *
+   * It's good because we can now override default pagination
+   * in our theme, and use this function in default quries
+   * and custom queries.
+   */
+  global $paged, $wp_rewrite;
+  if (empty($paged)) {
+    $paged = 1;
+  }
+  if ($numpages == '') {
+    global $wp_query;
+    $numpages = $wp_query->max_num_pages;
+    if(!$numpages) {
+        $numpages = 1;
+    }
+  }
+
+  /**
+   * We construct the pagination arguments to enter into our paginate_links
+   * function.
+   */
+  $pagination_args = array(
+    'base'            => @add_query_arg('page','%#%'),
+    'format'          => 'page/%#%',
+    'total'           => $numpages,
+    'current'         => $paged,
+    'show_all'        => true,
+    'end_size'        => 1,
+    'mid_size'        => $pagerange,
+    'prev_next'       => True,
+    'prev_text'       => __('<'),
+    'next_text'       => __('>'),
+    'type'            => 'plain',
+    'add_args'        => false,
+    'add_fragment'    => ''
+  );
+
+  $paginate_links = paginate_links($pagination_args);
+	//
+  // if ($paginate_links) {
+  //   echo "<nav class='custom-pagination'>";
+  //     echo "<span class='page-numbers page-num'>Page " . $paged . " of " . $numpages . "</span> ";
+			if ( $paged == 1) echo '<span class="page-numbers disabled"><a href="#" class="disabled">'.$pagination_args['prev_text'].'</a></span>';
+      echo $paginate_links;
+  //   echo "</nav>";
+  // }
+	// if ( $wp_rewrite->using_permalinks() )
+  //           $pagination_args['base'] = user_trailingslashit( trailingslashit( remove_query_arg( 's', get_pagenum_link( 1 ) ) ) . 'page/%#%/', 'paged' );
+  //   if ( !empty( $wp_query->query_vars['s'] ) )
+  //           $pagination_args['add_args'] = array( 's' => get_query_var( 's' ) );
+  //   $pages = paginate_links( $pagination_args );
+	// 	var_dump($pages);
+  //   echo '<ul>';
+  //   if ( $paged == 1) echo '<li><a href="#" class="disabled">&laquo;</a></li>';
+  //   foreach ($pages as $page) :
+  //       echo '<li>'.$page.'</li>';
+  //   endforeach;
+  //   if ( $paged == $wp_query->max_num_pages ) echo '<li><a href="#" class="disabled">&raquo;</a></li>';
+  //   echo '</ul>';
+}
+
+function get_authors(){
+	$authors = get_field('authur',get_the_ID());
+	$display = '';
+	// var_dump($authors);
+	foreach ($authors as $key => $author) {
+		$img = get_field('profile_picture','user_'.$author['ID']);
+		$user_position = get_field('user_position','user_'.$author['ID']);
+		$user_contact_number = get_field('user_contact_number','user_'.$author['ID']);
+		$user_linkedin_ = get_field('user_linkedin_','user_'.$author['ID']);
+		// var_dump($author);
+		$display .= '<div class="profile-author clearfix">
+			<div class="col-md-3">
+				<img src="'.$img['url'].'">
+			</div>
+			<div class="col-md-9">
+				<h4>'.$author['display_name'].'</h4>
+				<h6>'.$user_position.'</h6>
+				<p class="description">'.$author['user_description'].'</p>
+				<p>Tel: '.$user_contact_number.'</p>
+				<p>Email: '.$author['user_email'].'</p>
+				<p>Linkedin: '.$user_linkedin_.'</p>
+			</div>
+		</div>';
+	}
+	return $display;
+}
+add_shortcode( 'authors', 'get_authors' );
 
 // constant links
 DEFINE('THEMEPATH', get_template_directory().'/');

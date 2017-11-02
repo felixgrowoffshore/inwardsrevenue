@@ -1,0 +1,42 @@
+.single-job-listing{
+  padding-top : 30px;
+  h1,h2,h3,h4,h5,h6{
+    color: $brand-primary;
+  }
+  .company{
+    display: none;
+    .tagline{
+      margin-left : 3em;
+    }
+  }
+  .job-listing-meta{
+    display: none;
+  }
+}
+
+.job_listing-template-default{
+  .desc{
+    ul{
+      margin: 0;
+      li{
+        display: inline;
+        list-style: none;
+        padding : 20px 0px;
+
+        &:after{
+          content: "";
+          width : 2px;
+          height: 20px;
+          display: inline-block;
+          background: #fff;
+          margin: 0 15px 0 20px;
+        }
+        &:last-child{
+          &:after{
+            width:0;
+          }
+        }
+      }
+    }
+  }
+}

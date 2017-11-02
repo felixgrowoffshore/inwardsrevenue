@@ -1,6 +1,8 @@
 .candidates-con{
 	padding-bottom: 40px;
-	
+	@media (max-width: $screen-sm-min) {
+		padding-bottom: 0px;
+	}
 	.container{
 		padding: 0px;
 		a{
@@ -14,10 +16,18 @@
 		color: #47a3dc;
 		font-weight: bold;
 		}
-	.candidate-p{
-		padding-top: 35px;
+		.candidate-p{
+			padding-top: 35px;
+			@media (max-width: $screen-sm-min) {
+				padding-top: 0px;
+			}
+		}
+  }
+	.candidates-cont1{
+		@media (max-width: $screen-sm-min) {
+			padding : 15px;
+		}
 	}
-  }	
 }
 
 
@@ -26,8 +36,13 @@
 .candidates-wrapper{
 
 	.candidates-con6{
-		padding-left: 0px;	
+		padding-left: 0px;
 
+		.candidates-row6{
+			@media (max-width: $screen-sm-min) {
+				padding : 15px;
+			}
+		}
 		h5{
 		color: #fff;
 		font-size: $font-size-h5;
@@ -39,7 +54,5 @@
 			width: 293px;
 			bottom: 3px;
 		}
-	}	
+	}
 }
-
-

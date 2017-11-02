@@ -27,7 +27,10 @@
 		</div>
 
 		<div class="col-md-6 colours red contact">
-			<?php echo do_shortcode ('[contact-form-7 id="299" title="Contact"]'); ?>
+			<?php
+			$form = get_field('contact_form_short_code');
+			?>
+			<?php echo do_shortcode ($form); ?>
 
 		<!--div id="IRC-from" class="col-md-6 colours red contact">
 			<?php //echo do_shortcode('[contact-form-7 id="162" title="IRC FORM"]'); ?>
