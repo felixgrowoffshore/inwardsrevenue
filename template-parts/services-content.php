@@ -19,9 +19,9 @@
 					$list_contents = get_field('list_contents',get_the_ID());
 					?>
 					<div class="col-md-3 irc-col1 colours <?= $background_color ?>">
-						<h2><?php the_title(); ?></h2>
+					<div>	<h2><?php the_title(); ?></h2>
 						<?= $list_description ?>
-
+					</div>
 						<div class="col-md-12">
 							<?php if($list_contents) :?>
 							<ul class="irc-profile">
