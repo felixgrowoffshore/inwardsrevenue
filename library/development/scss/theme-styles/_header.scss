@@ -104,8 +104,9 @@
 }
 
 .featured_image{
-	max-height : 40vh;
-	height : 40vh;
+	min-height: 40vh;
+	height: auto;
+	max-height: 100%;
 	display: flex;
 	position: relative;
 	background-position: center;
@@ -130,7 +131,7 @@
 		}
 		position: absolute;
 		width: 100%;
-		height: 100%;
+		height: inherit;
 		display: flex;
 		justify-content: center;
 		align-items: center;

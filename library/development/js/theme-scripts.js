@@ -27,6 +27,13 @@ jQuery(document).ready(function($){
   var ndx_show = 0;
   $(".irc-con .animate-this .wrapper").remove();
   // Set document scrolling event handler
+  var flag_scroll = true;
+  var flag_show = false;
+  var minus = 600;
+  var add = 475;
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+   add = 2000;
+  }
   $(document).on("scroll", function() {
     var visible = [];
     var scrollStart = $(this).scrollTop();
@@ -35,38 +42,48 @@ jQuery(document).ready(function($){
     clients_animate();
     for (var i=0, l=pos.length; i<l; i++) {
       if (pos[i].top < scrollStart || pos[i].top > scrollEnd) {
-        // console.log(pos[i].el.attr("class") + "=> " + (pos[i].top > scrollEnd ? 'true' : 'end'));
         continue;
       }
-      // console.log(pos[i].el.attr("class") + "=>" + pos[i].top);
-      // vis.push(pos[i].el.attr("class"));
       pos[i].el.removeClass('fade-away');
-      // right = pos[i].el.css('right').replace(/[^-\d\.]/g, '');
-      // pos[i].el.css('right',right + 1 + "px");
     }
-    // for (var i=irc.length-1; i >= 0 ; i--) {
-    //   if (irc[i].top < scrollStart || irc[i].top > scrollEnd) {
-    //     continue;
-    //   }
-    //   // $(".irc-con").prepend(irc[i].el);
-    //
-    //   var ava = irc_block[i].top - element_position + 200;
-    //   if(ava > 0){
-    //     var percent = (scrollStart / ava * 100) / 2 + 50;
-    //     var percent_ = ((scrollStart / ava * 100) / 2 - 50) * -1.0;
-    //     if(percent >= 75 ){
-    //       if(i%2 == 0){
-    //         irc_block[i].el.add;
-    //       } else {
-    //         irc_block[i].el.css("background","linear-gradient(50deg, #f3bce1 "+percent_+"%, transparent "+percent_+"%, transparent "+percent+"%, #ffccff 50%)");
-    //       }
-    //     }
-    //
-    //   }
-    // }
+    var scrollEnd2 = $(document).height();
+    // client on scroll showing of slides
+    // console.log(scrollStart + " : "+ irc[ndx_show].top);
+    console.log("show : " + (scrollStart + add) + " > " + (scrollEnd2 - minus));
+    if ((scrollStart + add) > (scrollEnd2 - minus)) {
+      // console.log("show : " + irc[ndx_show].top + " > " + (scrollEnd2 - minus));
+      flag_show = true;
+    }
+    if(irc[ndx_show] && flag_scroll && flag_show){
+      flag_scroll = false;
+      flag_show = false;
+      // scrollEnd2 += irc[ndx_show].top;
+      $(".irc-con .animate-this").append(irc[ndx_show].el);
+      var current = $(".irc-con .animate-this > div:last-child");
+      // console.log(current);
+      // current.css("background","red");
+      var counter = 0;
+      var limit = 50;
+      var addcss = setInterval(function(){
+        counter++
 
+        if(ndx_show%2 == 0){
+          current.css("background","linear-gradient(50deg, #f3bce1 "+counter+"%, transparent "+counter+"%, transparent "+(100-counter)+"%, #ffccff 50%)");
+        } else {
+          current.css("background","linear-gradient(50deg, #ffccff "+counter+"%, transparent "+counter+"%, transparent "+(100-counter)+"%, #f3bce1 50%)");
+        }
+        if(counter == limit){
+          clearInterval(addcss);
+          flag_scroll = true;
+          current.find("h2").addClass("active-show");
+          current.find("p").addClass("active-show");
+        }
+      }, 10);
+
+      ndx_show++;
+    }
   }).scroll();
-  var flag_scroll = true;
+
   $(window).on('scroll', function() {
       // flag_scroll = true;
       var y_scroll_pos = window.pageYOffset;
@@ -78,37 +95,7 @@ jQuery(document).ready(function($){
         $("#masthead").addClass('colour-disabled');
       }
 
-      // client on scroll showing of slides
-      // console.log("show index" + ndx_show);
-      if(!$(".featured_image").length){
-        // alert();
-      }
-      if(irc[ndx_show] && flag_scroll){
-        flag_scroll = false;
-        $(".irc-con .animate-this").append(irc[ndx_show].el);
-        var current = $(".irc-con .animate-this > div:last-child");
-        // console.log(current);
-        // current.css("background","red");
-        var counter = 0;
-        var limit = 50;
-        var addcss = setInterval(function(){
-          counter++
 
-          if(ndx_show%2 == 0){
-            current.css("background","linear-gradient(50deg, #f3bce1 "+counter+"%, transparent "+counter+"%, transparent "+(100-counter)+"%, #ffccff 50%)");
-          } else {
-            current.css("background","linear-gradient(50deg, #ffccff "+counter+"%, transparent "+counter+"%, transparent "+(100-counter)+"%, #f3bce1 50%)");
-          }
-          if(counter == limit){
-            clearInterval(addcss);
-            flag_scroll = true;
-            current.find("h2").addClass("active-show");
-            current.find("p").addClass("active-show");
-          }
-        }, 10);
-
-        ndx_show++;
-      }
 
   });
 
