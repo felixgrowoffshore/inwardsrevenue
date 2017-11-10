@@ -8,23 +8,26 @@
 		  $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 		  $query_args = array(
 		    'post_type' => 'post',
-		    'posts_per_page' => 3,
+		    'posts_per_page' => 12,
 		    'paged' => $paged
 		  );
 		  // create a new instance of WP_Query
 		  $the_query = new WP_Query( $query_args );
 		?>
 
-		<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); // run the loop ?>
-			<div class="row blog-row colours light-yellow">
-				<div class="col-md-4 blog-img">
-					<?php
-					if ( has_post_thumbnail() ) {
-					    the_post_thumbnail();
-					}
-					?>
-				</div>
-				<div class="col-md-8 blog-info">
+		<?php if ( $the_query->have_posts() ) : $counter = 0; while ( $the_query->have_posts() ) : $the_query->the_post(); // run the loop ?>
+			<?php
+			$counter++;
+			?>
+			<div class="row blog-row <?= $counter%2 == 0 ? '' : 'colours light-yellow' ?>">
+
+					<?php if ( has_post_thumbnail() ) { ?>
+						<div class="col-md-4 blog-img">
+					    <?php the_post_thumbnail(); ?>
+						</div>
+					<?php } ?>
+
+				<div class="col-md-<?= has_post_thumbnail() ? '8' : '12 blog-img' ?> blog-info">
 					<h3><?php the_title(); ?></h3>
 					<?php the_excerpt(); ?>
 					<a href="<?php the_permalink(); ?>">BY: <?php the_author(); ?> | <?php echo get_the_date(); ?></a>

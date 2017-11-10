@@ -12,6 +12,22 @@
 	</div>
 
 	<hr> -->
+	<div class="wrapper2 irc-wrap9">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2><?= the_title(); ?></h2>
+					<?php
+					while ( have_posts() ) : the_post();
+			     if( '' !== get_post()->post_content ) :
+			       the_content();
+			     endif;
+			    endwhile;
+					?>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="animate-this">
 		<?php
 		$irc_50 = get_field('page_contents');
@@ -30,21 +46,7 @@
 		<?php } endif; ?>
 	</div>
 
-	<div class="wrapper2 irc-wrap9">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<h2><?= the_title(); ?></h2>
-				<?php
-				while ( have_posts() ) : the_post();
-		     if( '' !== get_post()->post_content ) :
-		       the_content();
-		     endif;
-		    endwhile;
-				?>
-		</div>
-	</div>
-	</div>
+
 
 
 </div>

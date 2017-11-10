@@ -34,18 +34,38 @@ jQuery(document).ready(function($){
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
    add = 2000;
   }
+  // clients_animate();
   $(document).on("scroll", function() {
     var visible = [];
     var scrollStart = $(this).scrollTop();
     var scrollEnd = scrollStart+$(window).height();
     var vis=[];
-    clients_animate();
-    for (var i=0, l=pos.length; i<l; i++) {
-      if (pos[i].top < scrollStart || pos[i].top > scrollEnd) {
-        continue;
+    console.log(scrollStart);
+    // if(scrollStart >= 5){
+    //   $(".page-template-page-clients .page-content .client-con.trigger0").addClass('fade-away');
+    // } else if (scrollStart >= 10) {
+    //   $(".page-template-page-clients .page-content .client-con.trigger1").addClass('fade-away');
+    // } else if(scrollStart >= 15) {
+    //   for (var i=0, l=pos.length; i<l; i++) {
+    //     if (pos[i].top < scrollStart || pos[i].top > scrollEnd) {
+    //       continue;
+    //     }
+    //     pos[i].el.removeClass('fade-away');
+    //   }
+    // }
+    if(scrollStart >= 25){
+      for (var i=0, l=pos.length; i<l; i++) {
+        if (pos[i].top < scrollStart || pos[i].top > scrollEnd) {
+          continue;
+        }
+        pos[i].el.removeClass('fade-away');
       }
-      pos[i].el.removeClass('fade-away');
+    } else if (scrollStart >= 15) {
+      pos[1].el.removeClass('fade-away');
+    } else if (scrollStart >= 10) {
+      pos[0].el.removeClass('fade-away');
     }
+
     var scrollEnd2 = $(document).height();
     // client on scroll showing of slides
     // console.log(scrollStart + " : "+ irc[ndx_show].top);

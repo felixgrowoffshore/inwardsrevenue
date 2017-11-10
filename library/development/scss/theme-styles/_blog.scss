@@ -3,10 +3,17 @@
 	.blog-row{
 
 		.blog-img{
-			padding: 40px 40px 0 40px;
+			padding-left: 10%;
+			@media (max-width: $screen-sm-min) {
+				padding-left: 15px;
+			}
 		}
 
 		.blog-info{
+			// padding-left: 10%;
+			@media (max-width: $screen-sm-min) {
+				padding-left: 15px;
+			}
 			a{
 				display: block;
 				color: #e5a900;

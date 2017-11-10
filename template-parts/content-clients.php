@@ -4,7 +4,7 @@
 	if($client_contents ) :
 	foreach ($client_contents as $key => $client_content) {
 		?>
-		<div class="client-con <?= $client_content['background_color'] ?> colours">
+		<div class="client-con trigger-<?=$key?> <?= $client_content['background_color'] ?> colours fade-away">
 			<div class="container">
 				<div class="client-fade">
 					<h3 class="col-md-1 col-sm-2 col-xs-3 number"><?= ($key + 1) ?></h3>
