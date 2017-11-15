@@ -8,6 +8,9 @@
 				<div class="service-desc"><?= $service['list_description']; ?></div>
 
 				<div class="">
+					<?php if($service['list_content_label']) :?>
+						<h3><?= $service['list_content_label'] ?></h3>
+					<?php endif;?>
 					<?php if($service['list_contents']) :?>
 					<ul class="irc-profile">
 						<?php foreach ($service['list_contents'] as $key => $list) { ?>

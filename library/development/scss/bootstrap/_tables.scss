@@ -35,6 +35,7 @@ th {
         vertical-align: top;
         border-right: 1px solid $table-border-color;
         text-align: center;
+        word-break: break-all;
         &:last-child{
           border-right : 0;
         }

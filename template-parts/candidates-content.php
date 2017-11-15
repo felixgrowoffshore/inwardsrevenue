@@ -14,7 +14,7 @@ if($page_contents) :
 					<?= $page_content['description'] ?>
 				</div>
 				<?php if($page_content['find_out_more_link']) : ?>
-					<div>
+					<div class="btn-find-more">
 						<a class="btn" href="irc50-a-proven-process/">FIND OUT MORE</a>
 					</div>
 				<?php endif; ?>

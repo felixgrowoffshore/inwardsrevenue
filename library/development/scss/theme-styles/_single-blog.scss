@@ -7,6 +7,10 @@
   article{
     padding-left: 50px;
     padding-right: 25px;
+    @media (max-width: $screen-sm-min) {
+      padding-left: 15px;
+      padding-right: 15px;
+		}
   }
 }
 
@@ -28,5 +32,20 @@
     &.description{
       margin-bottom : 10px;
     }
+  }
+}
+
+.comment-form-comment{
+  textarea{
+    max-width: 100%;
+    width : 100%;
+  }
+}
+.tbl-container{
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  table{
+    max-width: 100%;
   }
 }

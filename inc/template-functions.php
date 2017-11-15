@@ -132,7 +132,7 @@ function custom_pagination($numpages = '', $pagerange = '', $paged='') {
    * function.
    */
   $pagination_args = array(
-    'base'            => @add_query_arg('page','%#%'),
+    'base'            => get_pagenum_link(1) . '%_%',
     'format'          => 'page/%#%',
     'total'           => $numpages,
     'current'         => $paged,
